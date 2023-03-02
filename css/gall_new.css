@@ -1,0 +1,172 @@
+.section-title h2 {
+  color: #535353;
+  display: inline-block;
+  font-size: 30px;
+  line-height: 21px;
+  margin-bottom: 52px;
+  position: relative;
+  text-transform: uppercase;
+}
+.section-title h2:before {
+  background: #6bc513 none repeat scroll 0 0;
+  bottom: -30px;
+  content: "";
+  height: 1px;
+  left: 50%;
+  margin-left: -68px;
+  position: absolute;
+  width: 136px;
+}
+.section-title.text-center > p {
+  margin-bottom: 0;
+}
+.section-title h2:after {
+    background: #fff none repeat scroll 0 0;
+    bottom: -43px;
+    color: #6bc513;
+    content: "";
+    font-family: FontAwesome;
+    left: 50%;
+    margin-left: -16px;
+    padding: 0 5px;
+    position: absolute;
+}
+.section-title.bg_grey h2:after {
+  background: #f1f1f1 none repeat scroll 0 0;
+}
+.gallery-tab-menu {
+  margin-bottom: 53px;
+}
+.gallery-tab-menu ul li {
+    display: inline-block;
+    margin-left: 35px;
+    padding: 20px 0;
+}
+.gallery-tab-menu ul li a,.gallery-tab-menu.isotope-menu ul li {
+    color: #535353;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.gallery-tab-menu ul li.active a,.gallery-tab-menu.isotope-menu ul li.active{
+  color: #6bc513
+}
+.gallery-tab-menu ul li:first-child {
+    margin-left: 0;
+}
+.gallery-tab-menu ul {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: inline-block;
+  padding: 0 40px;
+}
+.section-title {
+  margin-bottom: 55px;
+}
+.single-gallery {
+  float: left;
+  overflow: hidden;
+  padding: 7px;
+  position: relative;
+  width: 20%;
+}
+.tab-pane .single-gallery {
+  width: 100%;
+}
+.gallery-img a {
+  background: #6bc513 none repeat scroll 0 0;
+  border-radius: 50%;
+  color: #fff;
+  display: inline-block;
+  font-size: 35px;
+  height: 60px;
+  left: 50%;
+  line-height: 60px;
+  margin-left: -30px;
+  text-align: center;
+  top: 50%;
+  -webkit-transform: translateY(200%);
+          transform: translateY(200%);
+  width: 60px;
+  z-index: 99;
+}
+.gallery-img a:hover{color: #fff}
+.gallery-img a,.gallery-img:before {
+  opacity: 0;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  position: absolute;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+  visibility: hidden;
+}
+.gallery-img:before {
+  background: rgba(255, 255, 255, 0.6) none repeat scroll 0 0;
+  bottom: 15px;
+  content: "";
+  left: 15px;
+  right: 15px;
+  top: 15px;
+  -webkit-transform: translateY(-100%);
+          transform: translateY(-100%);
+  -webkit-transform-origin: 0 0 0;
+          transform-origin: 0 0 0;
+  z-index: 9;
+}
+.single-gallery:hover .gallery-img:before{
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+}
+.single-gallery:hover .gallery-img:before,.single-gallery:hover .gallery-img a{
+  opacity: 1;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+  visibility: visible;
+}
+.single-gallery:hover .gallery-img a {
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+.single-gallery:hover img {
+    -webkit-transform: scale(1.05);
+            transform: scale(1.05);
+}
+.single-gallery img {
+    -webkit-transition-duration: 0.3s;
+            transition-duration: 0.3s;
+}
+.owl_pagination.owl-theme .owl-controls .owl-page span,.home-slider-list.owl-carousel .owl-controls .owl-page span {
+  background: rgba(92, 197, 57, 0.6) none repeat scroll 0 0;
+  height: 14px;
+  margin: 0 4px;
+  opacity: 1;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+  width: 14px;
+}
+.owl_pagination.owl-theme .owl-controls .owl-page.active span,.home-slider-list.owl-carousel .owl-controls .owl-page.active span {
+  background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+  border: 3px solid #6bc513;
+  height: 16px;
+  width: 16px;
+}
+.single-gallery-list.owl-theme .owl-controls {
+  margin-top: 50px;
+  text-align: center;
+}
+.gallery-pages .single-gallery {
+  margin-bottom: 30px;
+  padding: 7px;
+}
+/*--------------
+    06.1 Our gallery 2 css here
+--------------*/
+.gallery-isotope-section .single-gallery {
+  margin-bottom: 30px;
+  padding: 0;
+  width: 100%;
+  border: 10px solid #f1f1f1;
+}
+.gallery-isotope-section .single-gallery:hover img {
+  -webkit-transform: inherit;
+          transform: inherit;
+}
+.gallery-tab-menu.isotope-menu ul li{cursor: pointer;}
+.galllery.item2 {
+  padding: 100px 0 70px;
+}

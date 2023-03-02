@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>SSPT LOGISTICS</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="img/fav-ico.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Poppins:wght@400;600&display=swap" rel="stylesheet"> -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="css/override.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/app.js"></script>
+    <link rel="stylesheet" href="css/user.css">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-md bb-1x navbar-light lite-black no-bb-1x sticky">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img src="img/sspt-logo-new.png" class="img-logo"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link btitle  " href="index.html">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link btitle  " href="about_us.html">ABOUT US</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link btitle " href="services.html">OUR SERVICES</a>
+                    </li>
+                    <!-- <li class="nav-item dropdown drop-left">
+                        <a class="nav-link btitle   dropdown-toggle" data-toggle="dropdown">SERVICES</a>
+                        <ul class="dropdown-menu" style="background-color: #111;">
+                            <li class="wd-180"><a href="services.html" class=" ">OUR SERVICES</a></li>
+                            <li class="wd-180"><a href="whatwedo.html" class=" ">WHAT WE DO</a></li>
+                        </ul>
+                    </li> -->
+                    <li class="nav-item dropdown drop-left">
+                        <a class="nav-link btitle   dropdown-toggle" data-toggle="dropdown">ENQUIRY</a>
+                        <ul class="dropdown-menu" style="background-color: #111;">
+                            <li class="wd-180"><a href="request_freight.html" class=" ">REQUEST FOR FREIGHT</a></li>
+                            <li class="wd-180"><a href="vendor_reg.html" class=" ">VENDOR REGISTRATION</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown drop-left">
+                        <a class="nav-link btitle   dropdown-toggle" data-toggle="dropdown">CONTACT US</a>
+                        <ul class="dropdown-menu" style="background-color: #111;">
+                            <li class="wd-180"><a href="contact_us.html" class=" ">GET IN TOUCH</a></li>
+                            <li class="wd-180"><a href="careers.html" class=" ">CAREERS</a></li>
+                            <li class="wd-180"><a href="our_network.html" class=" ">OUR NETWORK</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown drop-left" style="border-left: 1px solid #777;">
+                        <a class="nav-link btitle   dropdown-toggle" data-toggle="dropdown">TRACK YOUR ORDER</a>
+                        <ul class="dropdown-menu" style="background-color: #111;">
+                            <li class="text-center   fs-16">Keep Track of your packages</li>
+                            <li><input type="number" class="form-control" placeholder="Enter ID" id="number"></li>
+                            <li><button class="btn btn-success full-width"><i class="fa fa-plus fa-fw fa-lg pr-3"></i>Track & Trace</button></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown drop-left user" id="userblock" style="margin-left: 40px; margin-right: 40px; margin-top: 4px;">
+                        <a class="userlink" id="userlink" data-toggle="dropdown"></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#" class="wd-180 js-popup-open" data-href="#login">Login</a></li>
+                            <li><a href="#" class="wd-180 js-popup-open" data-href="#registration">Registration</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <section class="banner" style="margin-top: 70px;">
+        <div class="container">
+            <h1 class="text-dark pt-5">
+                <Strong>Terms and Conditions</Strong>
+            </h1>
+        </div>
+    </section>
+    <div class="container mt-5 text-justify">
+        <p>1. The SSPT Logistics Private Ltd shall issue the Lorry Receipt at owner’s risk only</p>
+        <p>2. The Lorry Receipt is issued strictly on the basis of declaration given by the parties; M/s.SSPT Logistics Private Ltd shall not be responsible for any wrongful declaration.</p>
+        <p>► The parties hereby declare that the goods covered under the Docket does not include any contraband, hazardous, inflammable or prohibited articles as defined in various states & IATA Regulations.</p>
+        <p>► In the event of any discrepancy found by M/s.SSPT Logistics Private Limited in the weight declared by the parties and the actual weight of that shipment, the differential charges will be collected from the parties.</p>
+        <p>► In the event of rate mentioned on the Lorry receipt is found to be less than the card rate/contracted rate, the differential rate shall be collected from the parties.</p>
+        <p>3. The terms and condition stipulated in this Lorry Receipt are in addition to the special contract, if any between M/s.SSPT Logistics Private Limited and the parties.</p>
+        <p>4. Proper & complete documentation by the parties is compulsorily required along with accurate details of the Consignee address, phone number, e-mail and invoice as per statutory requirement.</p>
+        <p>5. The parties are solely responsible for all payments if any, levied by the government or any statutory body etc.,</p>
+        <p>In the event of any shipment being held up by any statutory authority, M/s.SSPT Logistics Private Limited shall not be responsible for any consequential loss/freight refund, Further parties agrees to make good loss to M/s.SSPT Logistics Private Limited in case of any claims lodged on M/s.SSPT Logistics Private Limited by statutory authorities due to insufficient documents or wrongful declaration by the parties.</p>
+        <p>6. M/s.SSPT Logistics Private Limited undertakes to and shall deliver the goods in the same order and condition as received subject to any deterioration in the condition of goods resulting from causes like riots, fire, accident of the vehicle carrying goods, explosion, floods etc., either on national highway or any other route.</p>
+        <p>7. If the parties do not take delivery of the shipment due to any reason whatsoever M/s.SSPT Logistics Private Limited shall raise bill to the parties towards transportation and other charge in terms of this Lorry receipt and the parties shall be liable to pay dues payable to transporter at the origin or any other agreed station.</p>
+        <p>8. No claim will be entertained by M/s.SSPT Logistics Private Limited for any loss, shortage, damage non-delivery, breakage, leakage, pilferage etc. For the shipment unless a written claim is lodged within 30 days from the booking date, subject to remarks on the acknowledgment copy / POD. The parties shall not be entitled to deduct or adjust the claim amount from the freight amount.</p>
+        <p>9. If the shipment is not accepted by the parties, when tendered for delivery for any reason, M/s.SSPT Logistics Private Limited shall be entitled to send the goods to Unclaimed Goods Department (UCP) to proceed for sale of goods for auction.</p>
+        <p>10. In case, party fails to take delivery of goods within 30 days from the date of arrival, a demurrage charges of .01% of invoice value or Rs.0.30 per kg per day on charged weight or Rs.100/- per day whichever is higher will be charged or such rates as may be fixed by M/s.SSPT Logistics Private Limited from time to time.</p>
+        <p>11. The transport operator shall have the right to dispose-off perishable goods lying undelivered after 48 hours of arrival without any intimation.</p>
+        <p>12. M/s.SSPT Logistics Private Limited shall have right to general lien over all the goods of the parties towards any dues payable to M/s.SSPT Logistics Private Limited</p>
+        <p>13. The business operations of M/s.SSPT Logistics Private Limited are decentralized and operations, autonomy has been provided to respective operational zones and responsibilities rest with respective operational zonal heads on exclusive basis for performance of all obligations of the transporter under this Lorry receipt the directors of M/s.SSPT Logistics Private Limited are not directly concerned with day to day operations of the decentralized zones and matters connected.</p>
+        <p>In case of any dispute arising out of or in relation to this Lorry receipt shall be referred to arbitration governed by the provisions of arbitration and conciliation act 1996 and as are in force at the time of any such alternation the transporter shall be entitled to nominate arbitrator to adjudicate the disputes at Chennai, Tamilnadu</p>
+        <p>14. The Transport operator shall preserve Lorry receipt and other records at least for a period of three years. Wherever, Fraud is detected or action is initiated, then the record has to be preserved till the matter is settled.</p>
+        <p>15. Where the goods have been lost, destroyed, damaged or have deteriorated, the compensation payable by the transport operator shall not exceed the value declared.</p>
+        
+        <!-- <p>""</p> -->
+    </div>
+
+    <footer>
+        <!-- Footer main -->
+        <section class="ft-main">
+            <div class="ft-main-item col-lg-4">
+                <img src="img/sspt-logo-new.png" width="120px">
+                <h4 class="btitle mt-3">SRI SENDRAYA PERUMAL TRANSPORTS</h4>
+                <p class=" text-justify">SSPT Logistics Private Limited is operating more than 150 branches across the country. All our trucks are fitted with Electronic Tracking Devices, to locate the consignments and the trucks, at your fingertips to a Smart Phones.</p>
+            </div>
+            <div class="col-lg-5"></div>
+            <div class="ft-main-item col-lg-3">
+                <h3 class="ft-title">Our Social Media</h3>
+                <!-- <p>Get free updates before others do!</p>
+                <form class="footerss mb-4">
+                    <input type="email" name="email" placeholder="Enter email address">
+                    <input type="submit" value="Subscribe">
+                </form> -->
+                <section class="">
+                    <ul class="ft-social-list">
+                        <li><a href="#"><i class="fa fa-whatsapp"></i></a></li>
+                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                        <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+                        <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                    </ul>
+                </section>
+                <section class="">
+                 <div class="ft-social-list">
+                    <img src="img/playstore.png" width="120px">
+                    <img src="img/appstoree.png" width="120px">
+                </div>
+            </section>
+            </div>
+        </section>
+        <section class="ft-legal bt-1">
+            <ul class="ft-legal-list" style="list-style-type: none; margin-left: -40px;">
+                <li><a href="terms.html">Terms &amp; Conditions</a></li>
+                <li><a href="privacy.html">Privacy Policy</a></li>
+                <li><a href="faq.html">FAQs</a></li>
+                <li>&copy; 2022 by EETTI TECH, Chennai</li>
+            </ul>
+        </section>
+    </footer>
+    <div class="overlay" id="overlay"></div>
+    <div class="popup login" id="login">
+        <div class="scroll">
+            <div class="scroll_wrap">
+                <div class="popup-head">
+                    <div class="title">Sign In</div>
+                    <a class="link js-popup-open" data-href="#registration">Sign Up</a>
+
+                </div>
+                <div class="popup-body">
+                    <div class="subtitle">
+                        Use the e-mail and password that you specified when registering on the site
+                    </div>
+                    <div class="form">
+                        <input type="text" class="input" placeholder="Login">
+                        <input type="text" class="input" placeholder="Password">
+                        <button class="submit button">Sign In</button>
+                        <a href="#" class="link">Forgot password?</a>
+                    </div>
+                </div>
+                <div class="popup-foot">
+                    <p>Login via social networks</p>
+                    <div class="social-links">
+                        <a href="#" class="link facebook"><span></span></a>
+                        <a href="#" class="link twitter"><span></span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="close"></div>
+    </div>
+
+    <div class="popup registration" id="registration">
+        <div class="scroll">
+            <div class="scroll_wrap">
+                <div class="popup-head">
+                    <div class="title">Sign Up</div>
+                    <a class="link js-popup-open" data-href="#login">Sign In</a>
+
+                </div>
+                <div class="popup-body">
+                    <div class="subtitle">
+                        Fill in the registration form and save your favorite tours, synchronize them on all devices
+                    </div>
+                    <div class="form">
+                        <input type="text" class="input" placeholder="Username">
+                        <input type="text" class="input" placeholder="Name">
+                        <input type="text" class="input" placeholder="Surename">
+                        <input type="email" class="input" placeholder="Email">
+                        <input type="password" class="input" placeholder="Password">
+                        <input type="password" class="input" placeholder="Password Repeat">
+                        <button class="submit button js-submit">Registration</button>
+                    </div>
+                </div>
+                <div class="popup-foot">
+                    <p>Sign Up via social networks</p>
+                    <div class="social-links">
+                        <a href="#" class="link facebook"><span></span></a>
+                        <a href="#" class="link twitter"><span></span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="close"></div>
+    </div>
+
+    <div class="popup forgot-pass" id="recovery-pass">
+        <div class="scroll">
+            <div class="scroll_wrap">
+                <div class="popup-head">
+                    <div class="title">Forgot password?</div>
+                </div>
+                <div class="popup-body">
+                    <div class="subtitle">
+                        Use the e-mail and password that you specified when registering on the site
+                    </div>
+                    <div class="form">
+                        <input type="email" class="input" placeholder="Email">
+                        <button class="submit button js-submit">Reset password</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="close"></div>
+    </div>
+
+    <div class="popup profile-setting" id="profile-setting">
+        <div class="scroll">
+            <div class="scroll_wrap">
+                <div class="select-userpic">
+                    <div class="userpic">V</div>
+                    <div class="select">
+                        <input type="file" id="profile-pic">
+                        <label for="profile-pic">Select photo</label>
+                    </div>
+                </div>
+                <div class="popup-head">
+                    <div class="title">Setting</div>
+                </div>
+                <div class="popup-body">
+                    <div class="form">
+                        <input type="text" class="input" placeholder="Username" value="Victor777">
+                        <input type="text" class="input" placeholder="Name" value="Victor">
+                        <input type="text" class="input" placeholder="Surename" value="Shibut">
+                        <input type="email" class="input" placeholder="Email" value="test@test.com">
+                        <div class="label">Change password</div>
+                        <input type="password" class="input" placeholder="Current password">
+                        <input type="password" class="input" placeholder="Enter new password">
+                        <input type="password" class="input" placeholder="New password repeat">
+                        <div class="label">Authorization through social networks</div>
+                        <div class="social-links">
+                            <a href="#" class="link facebook active"><span></span></a>
+                            <a href="#" class="link twitter"><span></span></a>
+                        </div>
+                        <button class="submit button js-submit">Save Setting</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="close"></div>
+    </div>
+
+    <div class="popup contact-us" id="contact-us">
+        <div class="scroll">
+            <div class="scroll_wrap">
+                <div class="popup-head">
+                    <div class="title">Contact Us</div>
+                </div>
+                <div class="popup-body">
+                    <div class="subtitle">
+                        But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain
+                    </div>
+                    <div class="form">
+                        <input type="text" class="input" placeholder="Name">
+                        <input type="email" class="input" placeholder="Email">
+                        <input type="text" class="input" placeholder="Phone">
+                        <textarea class="textarea" placeholder="Your Massage"></textarea>
+                        <button class="submit button js-submit">Send Massage</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="close"></div>
+    </div>
+
+    <div class="popup book-now-popup" id="book-now">
+        <div class="scroll">
+            <div class="scroll_wrap">
+                <div class="popup-head">
+                    <div class="title">Book Now</div>
+                </div>
+                <div class="popup-body">
+                    <div class="tour-title">
+                        <div class="img">
+                            <img src="img/demo-bg.jpg" alt="">
+                        </div>
+                        <div class="tour-name">
+                            Tour to the Arctic is an exotic journey on the verge of extreme
+                        </div>
+                    </div>
+                    <div class="tour-info">
+                        <div class="col">
+                            <div class="label">Check In</div>
+                            <div class="date">
+                                <div class="day">09</div>
+                                <div class="month">May</div>
+                                <div class="year">2019</div>
+                            </div>
+                            <div class="label">Aduld: <span>3</span></div>
+                        </div>
+                        <div class="col">
+                            <div class="label">Check Out</div>
+                            <div class="date">
+                                <div class="day">09</div>
+                                <div class="month">May</div>
+                                <div class="year">2019</div>
+                            </div>
+                            <div class="label">Children: <span>0</span></div>
+                        </div>
+                    </div>
+                    <div class="form">
+                        <input type="text" class="input" placeholder="Your First Name">
+                        <input type="text" class="input" placeholder="Your Last Name">
+                        <input type="email" class="input" placeholder="Your Email">
+                        <input type="tel" class="input" placeholder="Your Number Phone">
+                        <textarea class="textarea" placeholder="Where are your address?"></textarea>
+                        <textarea class="textarea" placeholder="Note:"></textarea>
+                        <button class="submit button js-submit">Book Now | <b>$356</b></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="close"></div>
+    </div>
+
+    <div class="popup success-popup" id="contact-us-success">
+        <div class="scroll">
+            <div class="scroll_wrap">
+                <div class="popup-head">
+                    <div class="title">Success</div>
+                </div>
+                <div class="popup-body">
+                    <div class="subtitle">
+                        Your message was successfully sent. We will contact you shortly
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="close"></div>
+    </div>
+</body>
+<script>
+    AOS.init();
+</script>
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery-ui.min.js"></script>
+<script src="js/lightgallery.js"></script>
+<script src="js/jquery.mousewheel.min.js"></script>
+<script src="js/slick.min.js"></script>
+<script src="js/hammer.js"></script>
+<script src="js/scripts.js"></script>
+
+</html>

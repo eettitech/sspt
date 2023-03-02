@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>SSPT LOGISTICS</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="img/fav-ico.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Poppins:wght@400;600&display=swap" rel="stylesheet"> -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="css/override.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/app.js"></script>
+    <link rel="stylesheet" href="css/user.css">
+
+
+    <!-- <link rel="stylesheet" href="css/core.css"> -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <!-- customizer style css -->
+     <link href="#" data-style="styles" rel="stylesheet">
+    <!-- Modernizr JS -->
+    <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+    
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-md bb-1x navbar-light lite-black no-bb-1x sticky">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img src="img/sspt-logo-new.png" class="img-logo"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link btitle" href="index.html">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link btitle" href="about_us.html">ABOUT US</a>
+                    </li>
+                     <li class="nav-item">
+                        <a class="nav-link btitle " href="services.html" style="color: #ffffff;">OUR SERVICES</a>
+                    </li>
+                   <!--  <li class="nav-item dropdown drop-left">
+                        <a class="nav-link btitle dropdown-toggle" data-toggle="dropdown" style="color: #3a7bbe;">SERVICES</a>
+                        <ul class="dropdown-menu" style="background-color: #111;">
+                            <li class="wd-180"><a href="services.html" style="color: #3a7bbe;">OUR SERVICES</a></li>
+                            <li class="wd-180"><a href="whatwedo.html" class=" ">WHAT WE DO</a></li>
+                        </ul>
+                    </li> -->
+                    <li class="nav-item dropdown drop-left">
+                        <a class="nav-link btitle   dropdown-toggle" data-toggle="dropdown">ENQUIRY</a>
+                        <ul class="dropdown-menu" style="background-color: #111;">
+                            <li class="wd-180"><a href="request_freight.html" class=" ">REQUEST FOR FREIGHT</a></li>
+                            <li class="wd-180"><a href="vendor_reg.html" class=" ">VENDOR REGISTRATION</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown drop-left">
+                        <a class="nav-link btitle   dropdown-toggle" data-toggle="dropdown">CONTACT US</a>
+                        <ul class="dropdown-menu" style="background-color: #111;">
+                            <li class="wd-180"><a href="contact_us.html" class=" ">GET IN TOUCH</a></li>
+                            <li class="wd-180"><a href="careers.html" class=" ">CAREERS</a></li>
+                            <li class="wd-180"><a href="our_network.html" class=" ">OUR NETWORK</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown drop-left" style="border-left: 1px solid #777;">
+                        <a class="nav-link btitle   dropdown-toggle" data-toggle="dropdown">TRACK YOUR ORDER</a>
+                        <ul class="dropdown-menu" style="background-color: #111;">
+                            <li class="text-center   fs-16">Keep Track of your packages</li>
+                            <li><input type="number" class="form-control" placeholder="Enter ID" id="number"></li>
+                            <li><button class="btn btn-success full-width"><i class="fa fa-plus fa-fw fa-lg pr-3"></i>Track & Trace</button></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown drop-left user" id="userblock" style="margin-left: 40px; margin-right: 40px; margin-top: 4px;">
+                        <a class="userlink" id="userlink" data-toggle="dropdown"></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#" class="wd-180 js-popup-open" data-href="#login">Login</a></li>
+                            <li><a href="#" class="wd-180 js-popup-open" data-href="#registration">Registration</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="section-2 bg-light pt-4 pb-4" style="margin-top: 80px;" data-aos="fade-up">
+        <div class="container mt-5 mb-5">
+            <div class="row">
+                <div class="col-12 col-lg-5 col-md-5 col-sm-6 br-1">
+                    <div class="pl-4 pr-4">
+                        <h1 class="btitle mb-4">Our Services</h1>
+                        <p class="h6 lh-20 mb-4 text-justify">The fastest service and personal attention to every need has earned us a reputation in the market. The continued support of our clients, gives us confidence to provide additional value added services at a nominal rate and efficient
+                            execution to our ever increasing Client list.</p>
+                            <p class="h6 lh-20 mb-4 text-justify">
+                                •   Our Logistics is now used widely in the business sector, particularly by companies in the manufacturing sectors, to refer to how resources are handled and moved along the supply chain.
+                            </p>
+                            <p class="h6 lh-20 mb-4 text-justify">
+                                •   Our Logistics has now become a vital part of supply chain management that is utilised to plan, implement and control the flow and storage of goods and services in order to meet customer’s requirements. 
+                            </p>
+                            <p class="h6 lh-20 mb-4 text-justify">
+                                •   Our Logistics is the overall process of managing how resources are acquired, stored, and transported to their final destination.
+                            </p>
+                            
+                        <hr class="mb-4">
+                        <!-- <div class="d-flex">
+                            <div class="btn   btn-circle mr-4"><i class="fa fa-plus fa-fw"></i> </div>
+                            <div class="h6"><strong> View more <br> about our services</strong></div>
+                        </div> -->
+                    </div>
+                </div>
+                <div class="col-12 col-lg-7 col-md-7 col-sm-6">
+                    <img src="img/ourServices.jpg" width="100%" alt="Los Angeles">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section-services" data-aos="fade-up">
+        <div class="container mt-5 mb-5">
+            <div class="row bb-1 pt-5">
+                <div class="col-12 col-lg-5 col-md-5 col-sm-6 text-secondary pb-3 mbxn">Services</div>
+                <div class="col-12 col-lg-7 col-md-7 col-sm-6 text-secondary pb-3 mb-hidden">Solutions</div>
+            </div>
+            <div id="accordion" class="sspts">
+                <div class="card" id="smode">
+                    <div class="card-header"  >
+                        <a class="card-link" data-toggle="collapse" href="#collapseOne">
+                            <div class="row">
+                                <div class="col-lg-5 text-dark btitle h4 mb-hidden">SURFACE MODE</div>
+                                <div class="col-lg-7 text-dark">
+                                    <div class="float-left pt-2">SURFACE MODE</div>
+                                    <div class="float-right">
+                                        <div class="btn   btn-circle mr-4"><i class="fa fa-plus fa-fw"></i> </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div id="collapseOne" class="collapse" data-parent="#accordion">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-lg-5"></div>
+                                <div class="col-lg-7 h6 lh-20 mb-4 text-justify">The transportation of relatively small quantity and A cost-effective freight mode. Anything that can be shipped in small-to-medium quantities by road. Small packages (or Parcel) can be transported in a vehicle. Companies specializing in ecommerce ship parcel when there are hundreds, if not thousands, of small packages being shipped to different locations (Parcel is often made up of different modes of transportation, but always picked up and delivered by truck.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card" >
+                    <div class="card-header" >
+                        <a  id="expcargo" class="card-link" data-toggle="collapse" href="#collapseTwo">
+                            <div class="row">
+                                <div class="col-lg-5 text-dark btitle h4 mb-hidden">EXPRESS CARGO</div>
+                                <div class="col-lg-7 text-dark">
+                                    <div class="float-left pt-2">EXPRESS CARGO</div>
+                                    <div class="float-right">
+                                        <div class="btn   btn-circle mr-4"><i class="fa fa-plus fa-fw"></i> </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div id="collapseTwo" class="collapse" data-parent="#accordion">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-lg-5"></div>
+                                <div class="col-lg-7 h6 lh-20 mb-4 text-justify">We offer fast and guaranteed delivery of consignments, ensuring personalized care during the journey. Customers are demanding. They want more choices. More flexibility in ordering and delivery. More information about their shipments. And they want it done faster and cheaper. And with more care for the environment, health & safety. With it fast, Safe and Reliable door to door delivery services through our own consolidation across India.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        <a id="traincargo" class="card-link" data-toggle="collapse" href="#collapseThree">
+                            <div class="row">
+                                <div class="col-lg-5 text-dark btitle h4 mb-hidden">TRAIN CARGO</div>
+                                <div class="col-lg-7 text-dark">
+                                    <div class="float-left pt-2">TRAIN CARGO</div>
+                                    <div class="float-right">
+                                        <div class="btn   btn-circle mr-4"><i class="fa fa-plus fa-fw"></i> </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div id="collapseThree" class="collapse" data-parent="#accordion">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-lg-5"></div>
+                                <div class="col-lg-7 h6 lh-20 mb-4 text-justify">SSPT LOGISTICS PRIVATE LIMITED will transport your goods through rail to the chosen destination. Train Cargo Transportation has a lot of advantages. Not only is it fast, but it is also useful for transporting a large number of items (not volume though). The large rooms of trains available for transporting a large amount of goods is very useful. Transportation of goods through train is very beneficial when it comes to fastest surface transport. When it comes to logistics, goods transportation through rail is one of the first things that comes to our minds. It is one of the most common forms of cargo transportation and for good reason.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        <a id="fulltruckload" class="card-link" data-toggle="collapse" href="#collapseFour">
+                            <div class="row">
+                                <div class="col-lg-5 text-dark btitle h4 mb-hidden">FTL</div>
+                                <div class="col-lg-7 text-dark">
+                                    <div class="float-left pt-2">FULL TRUCK LOAD</div>
+                                    <div class="float-right">
+                                        <div class="btn   btn-circle mr-4"><i class="fa fa-plus fa-fw"></i> </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div id="collapseFour" class="collapse" data-parent="#accordion">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-lg-5"></div>
+                                <div class="col-lg-7 h6 lh-20 mb-4 text-justify">SSPT LOGISTICS PRIVATE LIMITED has a stronghold in Full Truck Load Services. It forms part of our core offerings. With our dedication and prolonged investment in the industry, we provide Full Truck Load services using LCV, HGV (Open & Container) Trucks and Trailers across India. Today we have a myriad of vehicles in our fleet, which includes trucks, trailers and solely owned vehicles. Our attached fleet also includes cranes, forklifts and other material handling equipment. We also offer round the clock service to our prestigious clients.
+                                Our service options include customized or specialized fleet for meeting customers’ specific requirement. As a Full Truck Load service provider, we assess your individual business needs to match with a carrier that can accommodate your shipment deadline in a most cost-effective way possible. It is important for the transporter to clearly understand the central and state laws and requirements at transit checkpoints for seamless movement. With decades of experience, we’ve known all the roadblocks that can occur while transportation, affecting the SLA. Hence, we make sure to take proactive measures to avoid these mistakes and ensure SLA fulfilment to our clients.
+                                Rest assured, you can leave the logistics worries to us and concentrate on your core competence/business.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        <a id="overdimensional" class="card-link" data-toggle="collapse" href="#collapseFive">
+                            <div class="row">
+                                <div class="col-lg-5 text-dark btitle h4 mb-hidden">DIMENSIONAL CARGO</div>
+                                <div class="col-lg-7 text-dark">
+                                    <div class="float-left pt-2">OVER DIMENSIONAL CARGO</div>
+                                    <div class="float-right">
+                                        <div class="btn   btn-circle mr-4"><i class="fa fa-plus fa-fw"></i> </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div id="collapseFive" class="collapse" data-parent="#accordion">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-lg-5"></div>
+                                <div class="col-lg-7 h6 lh-20 mb-4 text-justify">SSPT LOGISTICS PRIVATE LIMITED widely popular for the service it has provided in the ODC department. Our oversized equipment transport department has got the needed experience and technology to provide for class service in the most unfavourable and hostile environments. Our workforce, highly skilled and experienced in the field helps ensure quality and professionalism in our service. We empower latest technology that is needed to get the job done.SSPT strives to provide excellent & highly efficient logistics services by offering the clients integration specialization as well as providing them with a customized logistics solution.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        <a id="aircargo" class="card-link" data-toggle="collapse" href="#collapseSix">
+                            <div class="row">
+                                <div class="col-lg-5 text-dark btitle h4 mb-hidden">AIR CARGO</div>
+                                <div class="col-lg-7 text-dark">
+                                    <div class="float-left pt-2">AIR CARGO</div>
+                                    <div class="float-right">
+                                        <div class="btn   btn-circle mr-4"><i class="fa fa-plus fa-fw"></i> </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div id="collapseSix" class="collapse" data-parent="#accordion">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-lg-5"></div>
+                                <div class="col-lg-7 h6 lh-20 mb-4 text-justify">If your number one priority is to reduce transit times to a minimum, our door-to-door services can transport your goods from your warehouse to the final destination. This is perfect for scheduled shipments of material.<br>
+                                In addition, our teams are on hand 24 hours a day, 365 days a year, to take care of any unexpected circumstances, in which speed is of the essence. We can coordinate and organize urgent shipments at short notice, such as a factory stoppage, spare parts for the aviation industry, or medical equipment.<br>
+                                We can handle your air shipments from start to finish, from your warehouse to your customer’s doorstep, including Customs procedures. Therefore, you can send your goods door-to-door, streamlining transit times.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        <a id="packer" class="card-link" data-toggle="collapse" href="#collapseSeven">
+                            <div class="row">
+                                <div class="col-lg-5 text-dark btitle h4 mb-hidden">PACKERS & MOVERS</div>
+                                <div class="col-lg-7 text-dark">
+                                    <div class="float-left pt-2">PACKERS & MOVERS</div>
+                                    <div class="float-right">
+                                        <div class="btn   btn-circle mr-4"><i class="fa fa-plus fa-fw"></i> </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div id="collapseSeven" class="collapse" data-parent="#accordion">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-lg-5"></div>
+                                <div class="col-lg-7 h6 lh-20 mb-4 text-justify">When you think about affordable House Hold Movers and Packers, SSPT would be the best choice. We offer the best possible moving services throughout India. With the assurance of quality service, SSPT ensures that you enjoy a safe shifting from one location to the other. Office or home removal and shifting can be done, absolutely at your convenience. With years of experience in moving and packing, we certainly know what works best for you. Our efficient manpower ensures that work is done in time.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <!-- Footer main -->
+        <section class="ft-main">
+            <div class="ft-main-item col-lg-4">
+                <img src="img/sspt-logo-new.png" width="120px">
+                <h4 class="btitle mt-3">SRI SENDRAYA PERUMAL TRANSPORTS</h4>
+                <p class=" text-justify">SSPT Logistics Private Limited is operating more than 150 branches across the country. All our trucks are fitted with Electronic Tracking Devices, to locate the consignments and the trucks, at your fingertips to a Smart Phones.</p>
+            </div>
+            <div class="col-lg-5"></div>
+            <div class="ft-main-item col-lg-3">
+                <h3 class="ft-title">Our Social Media</h3>
+                <!-- <p>Get free updates before others do!</p>
+                <form class="footerss mb-4">
+                    <input type="email" name="email" placeholder="Enter email address">
+                    <input type="submit" value="Subscribe">
+                </form> -->
+                <section class="">
+                    <ul class="ft-social-list">
+                        <li><a href="#"><i class="fa fa-whatsapp"></i></a></li>
+                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                        <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+                        <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                    </ul>
+                </section>
+                <section class="">
+                 <div class="ft-social-list">
+                    <img src="img/playstore.png" width="120px">
+                    <img src="img/appstoree.png" width="120px">
+                </div>
+            </section>
+            </div>
+        </section>
+        <section class="ft-legal bt-1">
+            <ul class="ft-legal-list" style="list-style-type: none; margin-left: -40px;">
+                <li><a href="terms.html">Terms &amp; Conditions</a></li>
+                <li><a href="privacy.html">Privacy Policy</a></li>
+                <li><a href="faq.html">FAQs</a></li>
+                <li>&copy; 2022 by EETTI TECH, Chennai</li>
+            </ul>
+        </section>
+    </footer>
+    <div class="overlay" id="overlay"></div>
+    <div class="popup login" id="login">
+        <div class="scroll">
+            <div class="scroll_wrap">
+                <div class="popup-head">
+                    <div class="title">Sign In</div>
+                    <a class="link js-popup-open" data-href="#registration">Sign Up</a>
+
+                </div>
+                <div class="popup-body">
+                    <div class="subtitle">
+                        Use the e-mail and password that you specified when registering on the site
+                    </div>
+                    <div class="form">
+                        <input type="text" class="input" placeholder="Login">
+                        <input type="text" class="input" placeholder="Password">
+                        <button class="submit button">Sign In</button>
+                        <a href="#" class="link">Forgot password?</a>
+                    </div>
+                </div>
+                <div class="popup-foot">
+                    <p>Login via social networks</p>
+                    <div class="social-links">
+                        <a href="#" class="link facebook"><span></span></a>
+                        <a href="#" class="link twitter"><span></span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="close"></div>
+    </div>
+
+    <div class="popup registration" id="registration">
+        <div class="scroll">
+            <div class="scroll_wrap">
+                <div class="popup-head">
+                    <div class="title">Sign Up</div>
+                    <a class="link js-popup-open" data-href="#login">Sign In</a>
+
+                </div>
+                <div class="popup-body">
+                    <div class="subtitle">
+                        Fill in the registration form and save your favorite tours, synchronize them on all devices
+                    </div>
+                    <div class="form">
+                        <input type="text" class="input" placeholder="Username">
+                        <input type="text" class="input" placeholder="Name">
+                        <input type="text" class="input" placeholder="Surename">
+                        <input type="email" class="input" placeholder="Email">
+                        <input type="password" class="input" placeholder="Password">
+                        <input type="password" class="input" placeholder="Password Repeat">
+                        <button class="submit button js-submit">Registration</button>
+                    </div>
+                </div>
+                <div class="popup-foot">
+                    <p>Sign Up via social networks</p>
+                    <div class="social-links">
+                        <a href="#" class="link facebook"><span></span></a>
+                        <a href="#" class="link twitter"><span></span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="close"></div>
+    </div>
+
+    <div class="popup forgot-pass" id="recovery-pass">
+        <div class="scroll">
+            <div class="scroll_wrap">
+                <div class="popup-head">
+                    <div class="title">Forgot password?</div>
+                </div>
+                <div class="popup-body">
+                    <div class="subtitle">
+                        Use the e-mail and password that you specified when registering on the site
+                    </div>
+                    <div class="form">
+                        <input type="email" class="input" placeholder="Email">
+                        <button class="submit button js-submit">Reset password</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="close"></div>
+    </div>
+
+    <div class="popup profile-setting" id="profile-setting">
+        <div class="scroll">
+            <div class="scroll_wrap">
+                <div class="select-userpic">
+                    <div class="userpic">V</div>
+                    <div class="select">
+                        <input type="file" id="profile-pic">
+                        <label for="profile-pic">Select photo</label>
+                    </div>
+                </div>
+                <div class="popup-head">
+                    <div class="title">Setting</div>
+                </div>
+                <div class="popup-body">
+                    <div class="form">
+                        <input type="text" class="input" placeholder="Username" value="Victor777">
+                        <input type="text" class="input" placeholder="Name" value="Victor">
+                        <input type="text" class="input" placeholder="Surename" value="Shibut">
+                        <input type="email" class="input" placeholder="Email" value="test@test.com">
+                        <div class="label">Change password</div>
+                        <input type="password" class="input" placeholder="Current password">
+                        <input type="password" class="input" placeholder="Enter new password">
+                        <input type="password" class="input" placeholder="New password repeat">
+                        <div class="label">Authorization through social networks</div>
+                        <div class="social-links">
+                            <a href="#" class="link facebook active"><span></span></a>
+                            <a href="#" class="link twitter"><span></span></a>
+                        </div>
+                        <button class="submit button js-submit">Save Setting</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="close"></div>
+    </div>
+
+    <div class="popup contact-us" id="contact-us">
+        <div class="scroll">
+            <div class="scroll_wrap">
+                <div class="popup-head">
+                    <div class="title">Contact Us</div>
+                </div>
+                <div class="popup-body">
+                    <div class="subtitle">
+                        But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain
+                    </div>
+                    <div class="form">
+                        <input type="text" class="input" placeholder="Name">
+                        <input type="email" class="input" placeholder="Email">
+                        <input type="text" class="input" placeholder="Phone">
+                        <textarea class="textarea" placeholder="Your Massage"></textarea>
+                        <button class="submit button js-submit">Send Massage</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="close"></div>
+    </div>
+
+    <div class="popup book-now-popup" id="book-now">
+        <div class="scroll">
+            <div class="scroll_wrap">
+                <div class="popup-head">
+                    <div class="title">Book Now</div>
+                </div>
+                <div class="popup-body">
+                    <div class="tour-title">
+                        <div class="img">
+                            <img src="img/demo-bg.jpg" alt="">
+                        </div>
+                        <div class="tour-name">
+                            Tour to the Arctic is an exotic journey on the verge of extreme
+                        </div>
+                    </div>
+                    <div class="tour-info">
+                        <div class="col">
+                            <div class="label">Check In</div>
+                            <div class="date">
+                                <div class="day">09</div>
+                                <div class="month">May</div>
+                                <div class="year">2019</div>
+                            </div>
+                            <div class="label">Aduld: <span>3</span></div>
+                        </div>
+                        <div class="col">
+                            <div class="label">Check Out</div>
+                            <div class="date">
+                                <div class="day">09</div>
+                                <div class="month">May</div>
+                                <div class="year">2019</div>
+                            </div>
+                            <div class="label">Children: <span>0</span></div>
+                        </div>
+                    </div>
+                    <div class="form">
+                        <input type="text" class="input" placeholder="Your First Name">
+                        <input type="text" class="input" placeholder="Your Last Name">
+                        <input type="email" class="input" placeholder="Your Email">
+                        <input type="tel" class="input" placeholder="Your Number Phone">
+                        <textarea class="textarea" placeholder="Where are your address?"></textarea>
+                        <textarea class="textarea" placeholder="Note:"></textarea>
+                        <button class="submit button js-submit">Book Now | <b>$356</b></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="close"></div>
+    </div>
+
+    <div class="popup success-popup" id="contact-us-success">
+        <div class="scroll">
+            <div class="scroll_wrap">
+                <div class="popup-head">
+                    <div class="title">Success</div>
+                </div>
+                <div class="popup-body">
+                    <div class="subtitle">
+                        Your message was successfully sent. We will contact you shortly
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="close"></div>
+    </div>
+</body>
+<script>
+    AOS.init();
+</script>
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery-ui.min.js"></script>
+<script src="js/lightgallery.js"></script>
+<script src="js/jquery.mousewheel.min.js"></script>
+<script src="js/slick.min.js"></script>
+<script src="js/hammer.js"></script>
+<script src="js/scripts.js"></script>
+<script type="text/javascript">
+    var card = $(window.location.hash).closest('.card');
+    card.find('.collapse').addClass('show');
+    $('html, body').animate({
+            scrollTop: card.offset().top - 200
+        }, 500);
+</script>
+
+</html>

@@ -1,0 +1,847 @@
+    <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>SSPT LOGISTICS</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="img/fav-ico.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Poppins:wght@400;600&display=swap" rel="stylesheet"> -->
+
+
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="css/override.css">     
+    
+    <link rel="stylesheet" href="css/socialmedia_profile.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/app.js"></script>
+    <link rel="stylesheet" href="css/user.css">
+ 
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-md bb-1x navbar-light lite-black no-bb-1x sticky navbar-one" style="background-color: #b2ddf1; padding: 3px;">
+        <div><a href="tel: 1800 2122 55555" style="color: #0e275e; ">1800 2122 55555</a></div>
+        <div style="position: absolute; right: 10px"><a href="mailto: corporate@ssptlogistics.com" style="color: #0e275e; ">corporate@ssptlogistics.com</a></div>
+    </nav>
+    <nav class="navbar navbar-expand-md bb-1x navbar-light lite-black no-bb-1x sticky">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img src="img/sspt-logo-new.png" class="img-logo"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar" style="color: #000;">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <!-- <a class="nav-link btitle " href="index.html" style="color: #3a7bbe;">HOME</a> -->
+                        <a class="nav-link btitle " href="index.html" style="color: #ffffff;">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link btitle " href="about_us.html">ABOUT US</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link btitle " href="services.html">OUR SERVICES</a>
+                    </li>
+                    <!-- <li class="nav-item dropdown drop-left">
+                        <a class="nav-link btitle dropdown-toggle" data-toggle="dropdown">SERVICES</a>
+                        <ul class="dropdown-menu" style="background-color: #f7f5f5;">
+                            <li class="wd-180"><a href="services.html" class="">OUR SERVICES</a></li>
+                            <li class="wd-180"><a href="whatwedo.html" class="">WHAT WE DO</a></li>
+                            <li class="wd-180"><a href="BLOG.html" class="text-white">BLOGS</a></li>
+                        </ul>
+                    </li> -->
+                    <li class="nav-item dropdown drop-left">
+                        <a class="nav-link btitle dropdown-toggle" data-toggle="dropdown">ENQUIRY</a>
+                        <ul class="dropdown-menu" style="background-color: #f7f5f5;">
+                            <li class="wd-180"><a href="request_freight.html" class="">REQUEST FOR FREIGHT</a></li>
+                            <li class="wd-180"><a href="vendor_reg.html" class="">VENDOR REGISTRATION</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown drop-left">
+                        <a class="nav-link btitle  dropdown-toggle" data-toggle="dropdown">CONTACT US</a>
+                        <ul class="dropdown-menu" style="background-color: #fff;">
+                            <li class="wd-180"><a href="contact_us.html" class="">GET IN TOUCH</a></li>
+                            <li class="wd-180"><a href="careers.html" class="">CAREERS</a></li>
+                            <li class="wd-180"><a href="our_network.html" class="">OUR NETWORK</a></li>
+                        </ul>
+                    </li>
+                
+                    <li class="nav-item dropdown drop-left" style="border-left: 1px solid #777;">
+                        <a class="nav-link btitle dropdown-toggle" data-toggle="dropdown">TRACK YOUR ORDER</a>
+                        <ul class="dropdown-menu" style="background-color: #fff;">
+                            <li class="text-center fs-16">Keep Track of your packages</li>
+                            <li><input type="number" class="form-control" placeholder="Enter ID" id="number"></li>
+                            <li><button class="btn btn-success full-width"><i class="fa fa-plus fa-fw fa-lg pr-3"></i>Track & Trace</button></li>
+                        </ul>
+                    </li>
+                    <!-- <li class="nav-item dropdown drop-left user" id="userblock" style="margin-left: 40px; margin-right: 40px; margin-top: 4px;">
+                        <a class="userlink" id="userlink"></a>
+                        <ul class="dropdown-menu" style="left: -60px;">
+                            <li><a href="#" class="wd-180 js-popup-open" data-href="#login">Login</a></li>
+                            <li><a href="#" class="wd-180 js-popup-open" data-href="#registration">Registration</a></li>
+                        </ul>
+                    </li> -->
+                    <li class="nav-item dropdown drop-left user" id="userblock" style="margin-left: 40px; margin-right: 40px; margin-top: 4px; margin-top: 4px;">
+                        <a class="userlink" id="userlink" data-toggle="dropdown"></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#" class="wd-180 js-popup-open" data-href="#login">Login</a></li>
+                            <li><a href="#" class="wd-180 js-popup-open" data-href="#registration">Registration</a></li>
+                            <!-- <li><a href="#" class="wd-180 js-popup-open" data-href="#recovery-pass">Forgot password?</a></li> -->
+                            <!-- <li><a href="#" class="wd-180 js-popup-open" data-href="#profile-setting">Setting</a></li> -->
+                        </ul>
+                    </li>
+                    
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div id="demo" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ul class="carousel-indicators">
+            <li data-target="#demo" data-slide-to="0" class="active"></li>
+            <li data-target="#demo" data-slide-to="1"></li>
+            <li data-target="#demo" data-slide-to="2"></li>
+        </ul>
+        <!-- The slideshow -->
+
+        <div class="carousel-inner relative">
+            <div class="carousel-item active">
+                <img src="img/ban1.jpg" class="img1 img-fluid">
+            </div>
+            <div class="carousel-item">
+                <img src="img/ban2.jpg" class="img1 img-fluid">
+            </div>
+            <div class="carousel-item">
+                <img src="img/ban3.jpg" class="img1 img-fluid">
+            </div>
+            <div class="carousel-item">
+                <img src="img/ban4.jpg" class="img1 img-fluid">
+            </div>
+            <div class="carousel-item">
+                <img src="img/ban5.jpg" class="img1 img-fluid">
+            </div>
+            <div class="cont-head">
+                <div class="text-center">
+                    <div class="img-txt">
+                        <h2 class="mb-3 xnmhide hidden">We Provide Super-Fast & Fuss-Free Delivery Services!</h2>
+                        <h5 class="mb-5 xnmhide hidden">The fastest service and personal attention to every need has earned the firms a Name in the market.</h5>
+                        <div class="newsletter_form_box">
+                            <!--begin success_box -->
+                            <p class="newsletter_success_box" style="display:none;">We received your message and you'll hear from us soon. Thank You!</p>
+                            <!--end success_box -->
+                            <!--begin newsletter-form -->
+                            <form id="newsletter-form" class="newsletter_form" action="newsletter.php" method="post">
+                                <div class="row">
+                                    <div class="col-md-6 mb-3">
+                                        <input class="input-st full-width" type="text" name="nf_name" placeholder="Enter Your Name" required>
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+                                        <input class="input-st full-width" type="email" name="nf_email" placeholder="Enter Your Email Id" required>
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+                                        <input class="input-st full-width" type="tel" name="nf_phone" pattern="[0-9]{10}" placeholder="Enter Your 10 Digit Phone Number" required>
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+                                        <input class="full-width" type="submit" value="FOR ENQUIRY!" id="submit-button-newsletter">
+                                    </div>
+                                </div>
+                            </form>
+                            <!--end newsletter-form -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Left and right controls -->
+        <a class="carousel-control-prev" href="#demo" data-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a class="carousel-control-next" href="#demo" data-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </a>
+    </div>
+    <div class="section-2 bg-light pt-4 pb-4" data-aos="fade-up">
+        <div class="container mt-5 mb-5">
+            <div class="row">
+                <div class="col-12 col-lg-5 col-md-12 col-sm-12 br-1">
+                    <div class="pl-4 pr-4">
+                        <h2 class="btitle mb-4">INDIAN LOGISTICS INDUSTRY</h2>
+                        <div class="h6 lh-20 mb-4 text-justify">Logistics industry in India is gaining momentum at fast pace with the evolution of infrastructure and technological innovations with the emergence of new types of top logistics companies in India. The Indian logistics industry is defined by its ability to function as an integral service to the customers in helping them ameliorate their overhead costs in the logistics sector in India. Logistics is regarded as a crucial sector of the economy to offer cost-effective solutions for shipment and transportation of goods that supports various other commercial sectors.</div>
+                
+                        <div class="h6 lh-20 mb-4 text-justify">The logistics market in India comprises shipping, port-services, warehousing, rail, road and air freight, express cargo and other value-added services. The logistics sector in India supports various components of the manufacturing industry in India.</div>
+                        <hr class="mb-4">
+
+                        <!-- <div class="d-flex mb-4">
+                            <div class="btn btn-circle mr-4 text-white"><i class="fa fa-plus fa-fw"></i> </div>
+                            <div class="h6"><strong> View more <br> about our services</strong></div>
+                        </div> -->
+                    </div>
+                </div>
+                <div class="col-12 col-lg-7 col-md-12 col-sm-12">
+                    <img src="img/IndLog1.jpg" width="100%" alt="Los Angeles">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section-3 mb-5 knmb" data-aos="fade-up">
+        <div class="container sspt" >
+            <!-- Nav pills -->
+            <ul class="nav nav-pills justify-content-center mt-5 mb-5" role="tablist">
+                <li class="nav-item">
+                    <a class="nav-link active" data-toggle="pill" href="#menu0">SURFACE MODE</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-toggle="pill" href="#menu1">EXPRESS CARGO</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " data-toggle="pill" href="#menu2">TRAIN CARGO</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-toggle="pill" href="#menu3">FTL</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-toggle="pill" href="#menu4">DIMENSIONAL CARGO</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-toggle="pill" href="#menu5">AIR CARGO</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-toggle="pill" href="#menu6">PACKERS & MOVERS</a>
+                </li>
+                
+                <!-- <li class="nav-item">
+                    <a class="nav-link" data-toggle="pill" href="#menu5">DIMENSIONAL CARGO</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-toggle="pill" href="#menu5">DIMENSIONAL CARGO</a>
+                </li> -->
+
+            </ul>
+
+            <!-- Tab panes -->
+            <div class="tab-content">
+                <div id="menu0" class="container tab-pane active"><br>
+                    <div class="row">
+                        <div class="col-12 col-lg-5 col-md-12 col-sm-12 mb-5">
+                            <img src="img/ser1.jpg" width="100%" alt="Los Angeles">
+                        </div>
+                        <div class="col-12 col-lg-7 col-md-12 col-sm-12 bl-1">
+                            <div class="pl-4 pr-4 kcb">
+                                <h2 class="btitle mb-4 mbcn" >SURFACE MODE</h2>
+                                <div class="h6 mb-4 text-justify lh-20">The transportation of relatively small freight and A cost-effective freight mode. Anything that can be shipped in small-to-medium quantities can be shipped by road.</div>
+                                <hr class="mb-4">
+                            <a href="services.html#smode">
+                                <div class="d-flex">
+                                <div class="btn btn-circle text-white mr-4"><i class="fa fa-plus fa-fw" ></i> </div>
+                                <div class="h6"><strong> View more <br> about our services</strong></div>
+                                </div>
+                            </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="menu1" class="container tab-pane"><br>
+                    <div class="row">
+                        <div class="col-12 col-lg-5 col-md-12 col-sm-12 mb-5">
+                            <img src="img/ser2.jpg" width="100%" alt="Los Angeles">
+                        </div>
+                        <div class="col-12 col-lg-7 col-md-12 col-sm-12 bl-1">
+                            <div class="pl-4 pr-4 kcb">
+                                <h2 class="btitle mb-4 mbcn">EXPRESS CARGO</h2>
+                                <div class="h6 lh-20 mb-4 text-justify">We offer fast and guaranteed delivery of consignments, ensuring personalized care during the journey. Customers are demanding. They want more choices. More flexibility in ordering and delivery. </div>
+                                <hr class="mb-4">
+                            <a href="services.html#expcargo">
+                                <div class="d-flex">
+                                    <div class="btn btn-circle text-white mr-4"><i class="fa fa-plus fa-fw"></i> </div>
+                                    <div class="h6"><strong> View more <br> about our services</strong></div>
+                                </div>
+                            </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="menu2" class="container tab-pane"><br>
+                    <div class="row">
+                        <div class="col-12 col-lg-5 col-md-12 col-sm-12 mb-5">
+                            <img src="img/ser3.jpg" width="100%" alt="Los Angeles">
+                        </div>
+                        <div class="col-12 col-lg-7 col-md-12 col-sm-12 bl-1">
+                            <div class="pl-4 pr-4 kcb">
+                                <h2 class="btitle mb-4 mbcn">TRAIN CARGO</h2>
+                                <div class="h6 lh-20 mb-4 text-justify">SSPT LOGISTICS PRIVATE LIMITED will transport your goods through rail to the chosen destination. Train Cargo Transportation has a lot of advantages. Not only is it fast, but it is also useful for transporting a large number of items (not volume though).</div>
+                                <hr class="mb-4">
+                                <a href="services.html#traincargo">
+                                <div class="d-flex">
+                                    <div class="btn btn-circle text-white mr-4"><i class="fa fa-plus fa-fw"></i> </div>
+                                    <div class="h6"><strong> View more <br> about our services</strong></div>
+                                </div>
+                            </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="menu3" class="container tab-pane"><br>
+                    <div class="row">
+                        <div class="col-12 col-lg-5 col-md-12 col-sm-12 mb-5">
+                            <img src="img/ser4.jpg" width="100%" alt="Los Angeles">
+                        </div>
+                        <div class="col-12 col-lg-7 col-md-12 col-sm-12 bl-1">
+                            <div class="pl-4 pr-4 kcb">
+                                <h2 class="btitle mb-4 mbcn">FULL TRUCK LOAD</h2>
+                                <div class="h6 lh-20 mb-4 text-justify">SSPT LOGISTICS PRIVATE LIMITED has a stronghold in Full Truck Load Services. It forms part of our core offerings. With our dedication and prolonged investment in the industry, we provide Full Truck Load services using LCV, HGV (Open & Container) Trucks and Trailers across India. </d>
+                                    <hr class="mb-4">
+                                    <a href="services.html#fulltruckload">
+                                    <div class="d-flex">
+                                        <div class="btn btn-circle text-white mr-4"><i class="fa fa-plus fa-fw"></i> </div>
+                                        <div class="h6"><strong> View more <br> about our services</strong></div>
+                                    </div>
+                                </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="menu4" class="container tab-pane"><br>
+                    <div class="row">
+                        <div class="col-12 col-lg-5 col-md-12 col-sm-12 mb-5">
+                            <img src="img/ser5.jpg" width="100%" alt="Los Angeles">
+                        </div>
+                        <div class="col-12 col-lg-7 col-md-12 col-sm-12 bl-1">
+                            <div class="pl-4 pr-4 kcb">
+                                <h2 class="btitle mb-4 mbcn">OVER DIMENSIONAL CARGO</h2>
+                                <div class="h6 lh-20 mb-4 text-justify">SSPT LOGISTICS PRIVATE LIMITED widely popular for the service it has provided in the ODC department. Our oversized equipment transport department has got the needed experience and technology to provide for class service in the most unfavourable and hostile environments. </div>
+                                <hr class="mb-4">
+                                <a href="services.html#overdimensional">
+                                <div class="d-flex">
+                                    <div class="btn btn-circle text-white mr-4"><i class="fa fa-plus fa-fw"></i> </div>
+                                    <div class="h6"><strong> View more <br> about our services</strong></div>
+                                </div>
+                            </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                 <div id="menu5" class="container tab-pane"><br>
+                    <div class="row">
+                        <div class="col-12 col-lg-5 col-md-12 col-sm-12 mb-5">
+                            <img src="img/ser6.jpg" width="100%" alt="Los Angeles">
+                        </div>
+                        <div class="col-12 col-lg-7 col-md-12 col-sm-12 bl-1">
+                            <div class="pl-4 pr-4 kcb">
+                                <h2 class="btitle mb-4 mbcn">AIR CARGO</h2>
+                                <div class="h6 lh-20 mb-4 text-justify">If your number one priority is to reduce transit times to a minimum, our door-to-door services can transport your goods from your warehouse to the final destination. This is perfect for scheduled shipments of material.</div>
+                                <hr class="mb-4">.
+                                <a href="services.html#aircargo">
+                                <div class="d-flex">
+                                    <div class="btn btn-circle text-white mr-4"><i class="fa fa-plus fa-fw"></i> </div>
+                                    <div class="h6"><strong> View more <br> about our services</strong></div>
+                                </div>
+                            </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="menu6" class="container tab-pane"><br>
+                    <div class="row">
+                        <div class="col-12 col-lg-5 col-md-12 col-sm-12 mb-5">
+                            <img src="img/ser7.jpg" width="100%" alt="Los Angeles">
+                        </div>
+                        <div class="col-12 col-lg-7 col-md-12 col-sm-12 bl-1">
+                            <div class="pl-4 pr-4 kcb">
+                                <h2 class="btitle mb-4 mbcn">PACKERS & MOVERS</h2>
+                                <div class="h6 lh-20 mb-4 text-justify">When you think about affordable House Hold Movers and Packers, SSPT would be the best choice. We offer the best possible moving services throughout India. With the assurance of quality service, </div>
+                                <hr class="mb-4">
+                                <a href="services.html#packer">
+                                <div class="d-flex">
+                                    <div class="btn btn-circle text-white mr-4"><i class="fa fa-plus fa-fw"></i> </div>
+                                    <div class="h6"><strong> View more <br> about our services</strong></div>
+                                </div>
+                            </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!--end register-->
+    <div class="section-4 bg-light" data-aos="fade-up">
+        <div class="container pt-5 pb-5">
+            <div class="text-center">
+                <div class="h2 btitle  mb-4">VALUE ADDED FEATURES</div>
+                <div class="row justify-md-content-center mb-5">
+                    <div class="col-12 col-2"></div>
+                    <div class="col-12 col-lg-12">
+                        <!-- <div class="text-muted lh-20 ">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration, by injected humour, or new randomised words.</div> -->
+                    </div>
+                    <div class="col-12 col-2"></div>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-lg-4 col-md-6 col-sm-6 text-center mb-5">
+                        <div class="features-icon">
+                            <i class="fa fa-bullhorn "></i>
+                        </div>
+                        <!-- <img src="/img/ic1.png" class="sm-img-vaf"> -->
+                        <h4 class="btitle mt-4 mb-3">Safety Locker with Alarm </h4>
+                        <p>The Customized Center Locking with Alarm is one of our own invention in this Logistics industry to prevent the theft and in this way.</p>
+                    </div>
+                    <div class="col-12 col-lg-4 col-md-6 col-sm-6 text-center mb-5">
+                        <div class="features-icon">
+                            <i class="fa fa-map-marker"></i>
+                        </div>
+                        <!-- <img src="/img/twitter.png" class="sm-img-vaf"> -->
+                        <h4 class="btitle mt-4 mb-3">Real Time GPS Tracking </h4>
+                        <p>The Booking confirmation SMS will be sent to the customer's along with the Docket number and vehicle tracking link.</p>
+                    </div>
+                   <!-- <div class="col-12 col-lg-4 col-md-6 col-sm-6 text-center mb-5">
+                        <div class="features-icon">
+                            <i class="fa fa-android"></i>
+                        </div>
+                        //<img src="/img/twitter.png" class="sm-img-vaf">
+                        <h4 class="btitle mt-4 mb-3">Android Application </h4>
+                        <p>Curabitur quam etsum lacus etsumis nulat iaculis ets vitae etsum nisle varius sed feugiat ligula aliquam ets vitae dictis netsum.</p>
+                    </div>-->
+                    <div class="col-12 col-lg-4 col-md-6 col-sm-6 text-center mb-5">
+                        <div class="features-icon">
+                            <i class="fa fa-handshake-o"></i>
+                        </div>
+                        <!-- <img src="/img/twitter.png" class="sm-img-vaf"> -->
+                        <h4 class="btitle mt-4 mb-3">Committed Time Delivery </h4>
+                        <p>We are offering OTD (On-time Delivery) facility for our customers to fulfilling their logistics needs. </p>
+                    </div>
+                    <!--<div class="col-12 col-lg-4 col-md-6 col-sm-6 text-center mb-5">
+                        <div class="features-icon">
+                            <i class="fa fa-bookmark"></i>
+                        </div>
+                         <img src="/img/twitter.png" class="sm-img-vaf"> 
+
+                        <h4 class="btitle mt-4 mb-3">Online Booking </h4>
+                        <p>Curabitur quam etsum lacus etsumis nulat iaculis ets vitae etsum nisle varius sed feugiat ligula aliquam ets vitae dictis netsum.</p>
+                    </div>-->
+                    <div class="col-12 col-lg-4 col-md-6 col-sm-6 text-center mb-5">
+                        <!-- <img src="/img/twitter.png" class="sm-img-vaf"> -->
+                        <div class="features-icon">
+                            <i class="fa fa-truck"></i>
+                        </div>
+                        <h4 class="btitle mt-4 mb-3">65% Own Vehicle </h4>
+                        <p>A high-performance fleet forms the basis of every reliable logistics concept. The ultra-modern fleet of our group of companies thus follows the highest safety and quality standards. </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="section-4 bg-light" data-aos="fade-up">
+        <div class="container pt-5 pb-5">
+            <div class="text-center">
+                <div class="h2 btitle  mb-4">OUR GROUP OF COMPANIES</div>
+                <div class="row justify-md-content-center mb-5">
+                    <div class="col-12 col-2"></div>
+                    <div class="col-12 col-lg-12 hidden">
+                        <div class="text-muted lh-2 hidden">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration, by injected humour, or new randomised words.</div>
+                    </div>
+                    <div class="col-12 col-2"></div>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-lg-4 col-md-6 col-sm-6 text-center mb-5">
+                        <!-- <div class="features-icon">
+                            <i class="fa fa-bullhorn "></i>
+                        </div> -->
+                        <img src="img/group_1.png" class="sm-img-vaf">
+                        <h4 class="btitle mt-4 mb-3">Sankagiri Fuels Point</h4>
+                        <!-- <p>The Customized Center Locking with Alarm is one of our own invention to prevent the theft and in this way, </p> -->
+                    </div>
+                    <div class="col-12 col-lg-4 col-md-6 col-sm-6 text-center mb-5">
+                        <!-- <div class="features-icon">
+                            <i class="fa fa-map-marker"></i>
+                        </div> -->
+                        <img src="img/group_2.png" class="sm-img-vaf">
+                        <h4 class="btitle mt-4 mb-3">Sri Sendraya Perumal Transports <br>Pvt Ltd</h4>
+                        <!-- <p>The Booking confirmation SMS will be sent to the customer's along with the Docket number and vehicle tracking link.</p> -->
+                    </div>
+                    <div class="col-12 col-lg-4 col-md-6 col-sm-6 text-center mb-5">
+                        <!-- <div class="features-icon">
+                            <i class="fa fa-handshake-o"></i>
+                        </div> -->
+                        <img src="img/group_3.png" class="sm-img-vaf">
+                        <h4 class="btitle mt-4 mb-3">SSPT Tyres Private Limited</h4>
+                        <!-- <p>We are offering OTD (On-time Delivery) facility for our customers to fulfilling their logistics needs. </p> -->
+                    </div>
+                    
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row mb-5">
+            <div class="col-12 col-lg-12 col-md-12 col-sm-12 hidden">
+                <div class="title-blog mt-5">
+                    <h2 class="btitle">Our Blogs</h2>
+                    <a href="#" class="h6 text-primary"><span class="float-right"> Show More <i class="fa fa-angle-right fa-lg fa-fw"></i></span></a>
+                    <p>Written by SSPT experienced professionals who lives wherever he wants, and works whenever he wants.
+                    </p>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6 col-md-6 col-sm-6 col-12">
+                        <img src="https://practiceblog.freemote.com/img/big-post.png" class="img-fluid">
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-6 col-12">
+                        <div class="post-details post-top-details">
+                            <h2 class="mb-4 btitle">How to make your web design unique</h2>
+                            <h6 class="mb-5">What makes visual content unique & how to create it without breaking the rules.</h6>
+
+                            <div class="bio">
+                                <img src="https://practiceblog.freemote.com/img/me.png">
+                                <div>
+                                    <div>Aaron Jack</div>
+                                    <p class="fs-14">May 10 - 12 min read</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center mt-4">
+                    <div class="btn btn-dark ">Show All Blogs</div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--begin register -->
+    <section class="register-inner" id="register" data-aos="fade-up">
+        <div class="row">
+            <div class="col-12 col-lg-6 col-md-6 col-sm-6 xnmhide">
+                <img src="img/bg3.jpg" class="img-fluid" style="margin-left: -15px; width: 100%; height: 700px;">
+            </div>
+            <div class="col-12 col-lg-6 col-md-6 col-sm-6">
+                <form id="msform" method="post" action="/mailer/phpmail.php">
+                    <fieldset>
+                        <h3 class="fs-title">Tell us how we can assist you</h3>
+                        <h5 class="fs-subtitle">Please fill the details.</h5>
+                        <input type="text" name="fname" placeholder="Full Name" />
+                        <!-- <input type="text" name="lname" placeholder="Last Name" /> -->
+                        <input type="tel" pattern="[0-9]{10}" name="fphone" placeholder="Phone Number" />
+                        <input type="email" name="femail" placeholder="Email" />
+                        <select name="fticket" style="margin-bottom: 10px; padding: 5px;" >
+                            <option  value="" disabled selected >--Ticket Type--</option>
+                            <option value="Delivery">Delivery</option>
+                            <option value="Billing">Billing</option>
+                            <option value="Pickup">Pickup</option>
+                        </select>
+                        <input type="text" name="fbooking" placeholder="Booking Number" />
+                        <textarea class="form-control" rows="3" id="comment" name="fdesc" placeholder="Description"></textarea>
+                        <input type="submit" name="submit" class="submit action-button" value="Submit" />
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+
+    </section>
+    
+    <footer>
+        <!-- Footer main -->
+        <section class="ft-main">
+            <div class="ft-main-item col-lg-4">
+                <img src="img/sspt-logo-new.png" width="120px">
+                <h4 class="btitle mt-3">SRI SENDRAYA PERUMAL TRANSPORTS</h4>
+                <p class=" text-justify">SSPT Logistics Private Limited is operating more than 150 branches across the country. All our trucks are fitted with Electronic Tracking Devices, to locate the consignments and the trucks, at your fingertips to a Smart Phones.</p>
+            </div>
+            <div class="col-lg-5"></div>
+            <div class="ft-main-item col-lg-3">
+                <h3 class="ft-title">Our Social Media</h3>
+                <!-- <p>Get free updates before others do!</p>
+                <form class="footerss mb-4">
+                    <input type="email" name="email" placeholder="Enter email address">
+                    <input type="submit" value="Subscribe">
+                </form> -->
+                <section class="">
+                    <ul class="ft-social-list">
+                        <li><a href="#"><i class="fa fa-whatsapp"></i></a></li>
+                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                        <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+                        <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                    </ul>
+                </section>
+                <section class="">
+                 <div class="ft-social-list">
+                    <img src="img/playstore.png" width="120px">
+                    <img src="img/appstoree.png" width="120px">
+                </div>
+            </section>
+            </div>
+        </section>
+        <section class="ft-legal bt-1">
+            <ul class="ft-legal-list" style="list-style-type: none; margin-left: -40px;">
+                <li><a href="terms.html">Terms &amp; Conditions</a></li>
+                <li><a href="privacy.html">Privacy Policy</a></li>
+                <li><a href="faq.html">FAQs</a></li>
+                <li>&copy; 2022 by EETTI TECH, Chennai</li>
+            </ul>
+        </section>
+    </footer>
+    <div class="overlay" id="overlay"></div>
+    <div class="popup login" id="login">
+        <div class="scroll">
+            <div class="scroll_wrap">
+                <div class="popup-head">
+                    <div class="title">Sign In</div>
+                    <a class="link js-popup-open" data-href="#registration">Sign Up</a>
+
+                </div>
+                <div class="popup-body">
+                    <div class="subtitle">
+                        Use the e-mail and password that you specified when registering on the site
+                    </div>
+                    <div class="form">
+                        <input type="text" class="input" placeholder="Login">
+                        <input type="text" class="input" placeholder="Password">
+                        <button class="submit button">Sign In</button>
+                        <a href="#" class="link">Forgot password?</a>
+                    </div>
+                </div>
+                <div class="popup-foot">
+                    <p>Login via social networks</p>
+                    <div class="social-links">
+                        <a href="#" class="link facebook"><span></span></a>
+                        <a href="#" class="link twitter"><span></span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="close"></div>
+    </div>
+
+    <div class="popup registration" id="registration">
+        <div class="scroll">
+            <div class="scroll_wrap">
+                <div class="popup-head">
+                    <div class="title">Sign Up</div>
+                    <a class="link js-popup-open" data-href="#login">Sign In</a>
+
+                </div>
+                <div class="popup-body">
+                    <div class="subtitle">
+                        Fill in the registration form and save your favorite tours, synchronize them on all devices
+                    </div>
+                    <div class="form">
+                        <input type="text" class="input" placeholder="Username">
+                        <input type="text" class="input" placeholder="Name">
+                        <input type="text" class="input" placeholder="Surename">
+                        <input type="email" class="input" placeholder="Email">
+                        <input type="password" class="input" placeholder="Password">
+                        <input type="password" class="input" placeholder="Password Repeat">
+                        <button class="submit button js-submit">Registration</button>
+                    </div>
+                </div>
+                <div class="popup-foot">
+                    <p>Sign Up via social networks</p>
+                    <div class="social-links">
+                        <a href="#" class="link facebook"><span></span></a>
+                        <a href="#" class="link twitter"><span></span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="close"></div>
+    </div>
+
+    <div class="popup forgot-pass" id="recovery-pass">
+        <div class="scroll">
+            <div class="scroll_wrap">
+                <div class="popup-head">
+                    <div class="title">Forgot password?</div>
+                </div>
+                <div class="popup-body">
+                    <div class="subtitle">
+                        Use the e-mail and password that you specified when registering on the site
+                    </div>
+                    <div class="form">
+                        <input type="email" class="input" placeholder="Email">
+                        <button class="submit button js-submit">Reset password</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="close"></div>
+    </div>
+
+    <div class="popup profile-setting" id="profile-setting">
+        <div class="scroll">
+            <div class="scroll_wrap">
+                <div class="select-userpic">
+                    <div class="userpic">V</div>
+                    <div class="select">
+                        <input type="file" id="profile-pic">
+                        <label for="profile-pic">Select photo</label>
+                    </div>
+                </div>
+                <div class="popup-head">
+                    <div class="title">Setting</div>
+                </div>
+                <div class="popup-body">
+                    <div class="form">
+                        <input type="text" class="input" placeholder="Username" value="Victor777">
+                        <input type="text" class="input" placeholder="Name" value="Victor">
+                        <input type="text" class="input" placeholder="Surename" value="Shibut">
+                        <input type="email" class="input" placeholder="Email" value="test@test.com">
+                        <div class="label">Change password</div>
+                        <input type="password" class="input" placeholder="Current password">
+                        <input type="password" class="input" placeholder="Enter new password">
+                        <input type="password" class="input" placeholder="New password repeat">
+                        <div class="label">Authorization through social networks</div>
+                        <div class="social-links">
+                            <a href="#" class="link facebook active"><span></span></a>
+                            <a href="#" class="link twitter"><span></span></a>
+                        </div>
+                        <button class="submit button js-submit">Save Setting</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="close"></div>
+    </div>
+
+    <div class="popup contact-us" id="contact-us">
+        <div class="scroll">
+            <div class="scroll_wrap">
+                <div class="popup-head">
+                    <div class="title">Contact Us</div>
+                </div>
+                <div class="popup-body">
+                    <div class="subtitle">
+                        But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain
+                    </div>
+                    <div class="form">
+                        <input type="text" class="input" placeholder="Name">
+                        <input type="email" class="input" placeholder="Email">
+                        <input type="text" class="input" placeholder="Phone">
+                        <textarea class="textarea" placeholder="Your Massage"></textarea>
+                        <button class="submit button js-submit">Send Massage</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="close"></div>
+    </div>
+
+    <div class="popup book-now-popup" id="book-now">
+        <div class="scroll">
+            <div class="scroll_wrap">
+                <div class="popup-head">
+                    <div class="title">Book Now</div>
+                </div>
+                <div class="popup-body">
+                    <div class="tour-title">
+                        <div class="img">
+                            <img src="img/demo-bg.jpg" alt="">
+                        </div>
+                        <div class="tour-name">
+                            Tour to the Arctic is an exotic journey on the verge of extreme
+                        </div>
+                    </div>
+                    <div class="tour-info">
+                        <div class="col">
+                            <div class="label">Check In</div>
+                            <div class="date">
+                                <div class="day">09</div>
+                                <div class="month">May</div>
+                                <div class="year">2019</div>
+                            </div>
+                            <div class="label">Aduld: <span>3</span></div>
+                        </div>
+                        <div class="col">
+                            <div class="label">Check Out</div>
+                            <div class="date">
+                                <div class="day">09</div>
+                                <div class="month">May</div>
+                                <div class="year">2019</div>
+                            </div>
+                            <div class="label">Children: <span>0</span></div>
+                        </div>
+                    </div>
+                    <div class="form">
+                        <input type="text" class="input" placeholder="Your First Name">
+                        <input type="text" class="input" placeholder="Your Last Name">
+                        <input type="email" class="input" placeholder="Your Email">
+                        <input type="tel" class="input" placeholder="Your Number Phone">
+                        <textarea class="textarea" placeholder="Where are your address?"></textarea>
+                        <textarea class="textarea" placeholder="Note:"></textarea>
+                        <button class="submit button js-submit">Book Now | <b>$356</b></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="close"></div>
+    </div>
+
+    <div class="popup success-popup" id="contact-us-success">
+        <div class="scroll">
+            <div class="scroll_wrap">
+                <div class="popup-head">
+                    <div class="title">Success</div>
+                </div>
+                <div class="popup-body">
+                    <div class="subtitle">
+                        Your message was successfully sent. We will contact you shortly
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="close"></div>
+    </div>
+</body>
+<script>
+    AOS.init();
+</script>
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery-ui.min.js"></script>
+<script src="js/lightgallery.js"></script>
+<script src="js/jquery.mousewheel.min.js"></script>
+<script src="js/slick.min.js"></script>
+<script src="js/hammer.js"></script>
+<script src="js/scripts.js"></script>
+<script type="text/javascript">
+    $("#newsletter-form").on("submit", function(){
+        msform = $("#msform");
+        msform.find("input[name='fname']").val($("#newsletter-form").find("input[name='nf_name']").val());
+        msform.find("input[name='femail']").val($("#newsletter-form").find("input[name='nf_email']").val());
+        msform.find("input[name='fphone']").val($("#newsletter-form").find("input[name='nf_phone']").val());
+        $('html, body').animate({
+            scrollTop: $("#register").offset().top - 100
+        }, 1000);
+        return false;
+    });
+    // $("#msform").on("submit", function(){
+    //     $(this).attr("action", $(this).attr("action")+$(this).find("input[name='femail']").val());
+    // });
+</script>
+
+</html>

@@ -1,0 +1,158 @@
+.social-links .link {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  display: block;
+  float: left;
+  position: relative;
+  margin-right: 23px;
+}
+.social-links .link:last-child {
+  margin-right: 0;
+}
+.social-links .link span {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  z-index: 1;
+  background: inherit;
+}
+.social-links .link span:before {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  content: '';
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.social-links .link:after {
+  background: inherit;
+  position: absolute;
+  top: -4px;
+  left: -4px;
+  right: -4px;
+  bottom: -4px;
+  border-radius: 50%;
+  content: '';
+  filter: blur(6px);
+  -webkit-filter: blur(6px);
+  -moz-filter: blur(6px);
+  opacity: 0;
+  transition: all .1s linear;
+  will-change: opacity;
+}
+.social-links .link:hover:after {
+  opacity: 1;
+  transition: all .1s linear;
+}
+.social-links .link.facebook {
+  background: #33589E;
+}
+.social-links .link.facebook span:before {
+  width: 13px;
+  height: 25px;
+  background-image: url(../img/facebook-logo.svg);
+  margin-top: -13px;
+  margin-left: -7px;
+}
+.social-links .link.instagram {
+  background: #4c5ad1;
+  /* Old browsers */
+  background: -moz-linear-gradient(-45deg, #4c5ad1 0%, #ff3756 42%, #ff3e37 60%, #ffd42b 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(-45deg, #4c5ad1 0%, #ff3756 42%, #ff3e37 60%, #ffd42b 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(135deg, #4c5ad1 0%, #ff3756 42%, #ff3e37 60%, #ffd42b 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#4c5ad1', endColorstr='#ffd42b', GradientType=1);
+  /* IE6-9 fallback on horizontal gradient */
+}
+.social-links .link.instagram span:before {
+  width: 22px;
+  height: 22px;
+  background-image: url(../img/instagram-logo.svg);
+  margin-top: -11px;
+  margin-left: -11px;
+}
+.social-links .link.pinterest {
+  background: #C8232C;
+}
+.social-links .link.pinterest span:before {
+  width: 20px;
+  height: 24px;
+  background-image: url(../img/pinterest.svg);
+  margin-top: -12px;
+  margin-left: -10px;
+}
+.social-links .link.twitter {
+  background: #4BA0EB;
+}
+.social-links .link.twitter span:before {
+  width: 26px;
+  height: 20px;
+  background-image: url(../img/twitter-logo.svg);
+  margin-top: -10px;
+  margin-left: -13px;
+}
+.social-links .link.youtube {
+  background: #FF000E;
+}
+.social-links .link.youtube span:before {
+  width: 23px;
+  height: 16px;
+  background-image: url(../img/youtube-logo.svg);
+  margin-top: -8px;
+  margin-left: -12px;
+}
+.modal_search {
+  background: rgba(0, 48, 208, 0.89);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 5;
+  display: none;
+}
+.modal_search .close {
+  background: rgba(255, 255, 255, 0.33);
+  border-radius: 50%;
+  width: 48px;
+  height: 48px;
+  position: absolute;
+  display: block;
+  top: 30px;
+  right: 50px;
+  z-index: 1;
+}
+.modal_search .close:before {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  background: url(../img/close.svg) center center no-repeat;
+  background-size: contain;
+  top: 50%;
+  left: 50%;
+  margin-top: -8px;
+  margin-left: -8px;
+  content: '';
+  transition: all .2s linear;
+}
+.modal_search .close:hover {
+  cursor: pointer;
+}
+.modal_search .close:hover:before {
+  transform: rotate(90deg);
+  transition: all .2s linear;
+}
+.modal_search .search-tour {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.safari-browser .main_slider .slider_wrap .slide {
+  width: 100vw !important;
+}

@@ -1,0 +1,735 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>SSPT LOGISTICS</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="img/fav-ico.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+    
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Poppins:wght@400;600&display=swap" rel="stylesheet"> -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="css/override.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/app.js"></script>
+    <link rel="stylesheet" href="css/user.css">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-md bb-1x navbar-light lite-black no-bb-1x sticky">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img src="img/sspt-logo-new.png" class="img-logo"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link btitle  " href="index.html">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link btitle  " href="about_us.html">ABOUT US</a>
+                    </li>
+                     <li class="nav-item">
+                        <a class="nav-link btitle  " href="services.html">OUR SERVICES</a>
+                    </li>
+                    <!-- <li class="nav-item dropdown drop-left">
+                        <a class="nav-link btitle   dropdown-toggle" data-toggle="dropdown">SERVICES</a>
+                        <ul class="dropdown-menu" style="background-color: #111;">
+                            <li class="wd-180"><a href="services.html" class=" ">OUR SERVICES</a></li>
+                            <li class="wd-180"><a href="whatwedo.html" class=" ">WHAT WE DO</a></li>
+                        </ul>
+                    </li> -->
+                    <li class="nav-item dropdown drop-left">
+                        <a class="nav-link btitle   dropdown-toggle" data-toggle="dropdown">ENQUIRY</a>
+                        <ul class="dropdown-menu" style="background-color: #111;">
+                            <li class="wd-180"><a href="request_freight.html" class=" ">REQUEST FOR FREIGHT</a></li>
+                            <li class="wd-180"><a href="vendor_reg.html" class=" ">VENDOR REGISTRATION</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown drop-left">
+                        <a class="nav-link btitle   dropdown-toggle" data-toggle="dropdown">CONTACT US</a>
+                        <ul class="dropdown-menu" style="background-color: #111;">
+                            <li class="wd-180"><a href="contact_us.html" class=" ">GET IN TOUCH</a></li>
+                            <li class="wd-180"><a href="careers.html" class=" ">CAREERS</a></li>
+                            <li class="wd-180"><a href="our_network.html" class=" ">OUR NETWORK</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown drop-left" style="border-left: 1px solid #777;">
+                        <a class="nav-link btitle   dropdown-toggle" data-toggle="dropdown">TRACK YOUR ORDER</a>
+                        <ul class="dropdown-menu" style="background-color: #111;">
+                            <li class="text-center   fs-16">Keep Track of your packages</li>
+                            <li><input type="number" class="form-control" placeholder="Enter ID" id="number"></li>
+                            <li><button class="btn btn-success full-width"><i class="fa fa-plus fa-fw fa-lg pr-3"></i>Track & Trace</button></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown drop-left user" id="userblock" style="margin-left: 40px; margin-right: 40px; margin-top: 4px;">
+                        <a class="userlink" id="userlink" data-toggle="dropdown"></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#" class="wd-180 js-popup-open" data-href="#login">Login</a></li>
+                            <li><a href="#" class="wd-180 js-popup-open" data-href="#registration">Registration</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="section-services" data-aos="fade-up" style="margin-top: 80px;">
+        <div class="container mt-5 mb-5">
+            <div class="row bb-1 pt-5">
+                <div class="col-12 col-lg-5 col-md-5 col-sm-6 pb-3 mbxn h4 btitle">Frequently Asked Questions</div>
+            </div>
+            <div id="accordion" class="sspts">
+                <div class="card">
+                    <div class="card-header">
+                        <a class="card-link" data-toggle="collapse" href="#collapseOne">
+                            <div class="row">
+                                <div class="col-lg-5 text-dark btitle h5">1. How do I request a booking?</div>
+                                <div class="col-lg-7 text-dark">
+                                    <div class="float-right">
+                                        <div class="btn   btn-circle mr-4"><i class="fa fa-plus fa-fw"></i> </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div id="collapseOne" class="collapse show" data-parent="#accordion">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-lg-12 text-dark text-justify">Our booking system is a simplified process. You can place a booking request online on our website/App or you can call our customer care number XXXXXX. Our team after verification finds the nearest truck for you.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header">
+                        <a class="card-link" data-toggle="collapse" href="#collapseTwo">
+                            <div class="row">
+                                <div class="col-lg-5 text-dark btitle h5">2. How would I know my fare charges & bill amount?</div>
+                                <div class="col-lg-7 text-dark">
+                                    <div class="float-right">
+                                        <div class="btn   btn-circle mr-4"><i class="fa fa-plus fa-fw"></i> </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div id="collapseTwo" class="collapse" data-parent="#accordion">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-lg-12 text-dark text-justify">Once our system receives your booking, you will be notified of the approximate distance that your goods will travel, and accordingly your bill amount will be calculated. With our fare calculator, we instantaneously give you the best rate online.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header">
+                        <a class="card-link" data-toggle="collapse" href="#collapseThree">
+                            <div class="row">
+                                <div class="col-lg-5 text-dark btitle h5">3. Why do i need to pay token amount for booking confirmation ? What are the different modes of payment accepted by you?</div>
+                                <div class="col-lg-7 text-dark">
+                                    <div class="float-right">
+                                        <div class="btn   btn-circle mr-4"><i class="fa fa-plus fa-fw"></i> </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div id="collapseThree" class="collapse" data-parent="#accordion">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-lg-12 text-dark text-justify">We take token amount for booking confirmation for assurance that our Truck will be loaded once reached client pickup location.
+                                Customers can make payments via NEFT / IMPS / PAYTM / UPI. We accept all types of cards, so you can easily make a payment online.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header">
+                        <a class="card-link" data-toggle="collapse" href="#collapseFour">
+                            <div class="row">
+                                <div class="col-lg-5 text-dark btitle h5">4. How will I receive my invoice?</div>
+                                <div class="col-lg-7 text-dark">
+                                    <div class="float-right">
+                                        <div class="btn   btn-circle mr-4"><i class="fa fa-plus fa-fw"></i> </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div id="collapseFour" class="collapse" data-parent="#accordion">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-lg-12 text-dark text-justify">You will receive an auto-generated invoice to your registered e-mail ID once the consignment has been delivered.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header">
+                        <a class="card-link" data-toggle="collapse" href="#collapseFive">
+                            <div class="row">
+                                <div class="col-lg-5 text-dark btitle h5">5. Can I place a booking with multi-point pick-up and drop?</div>
+                                <div class="col-lg-7 text-dark">
+                                    <div class="float-right">
+                                        <div class="btn   btn-circle mr-4"><i class="fa fa-plus fa-fw"></i> </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div id="collapseFive" class="collapse" data-parent="#accordion">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-lg-12 text-dark text-justify">You can definitely do so. However, extra costs for the extra point of delivery or pick-up will be levied accordingly. Our team will provide you with the additional cost incurred at the time of booking.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header">
+                        <a class="card-link" data-toggle="collapse" href="#collapseSix">
+                            <div class="row">
+                                <div class="col-lg-5 text-dark btitle h5">6. How can I cancel my booking? Will I be charged a cancellation fee?</div>
+                                <div class="col-lg-7 text-dark">
+                                    <div class="float-right">
+                                        <div class="btn   btn-circle mr-4"><i class="fa fa-plus fa-fw"></i> </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div id="collapseSix" class="collapse" data-parent="#accordion">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-lg-12 text-dark text-justify">Currently, you are required to raise a cancellation request through the customer care number available on our website. Cancellation will then be approved as per the terms and conditions. A cancellation fee would also be applicable if our Truck has reached client pickup location.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <div class="card-header">
+                        <a class="card-link" data-toggle="collapse" href="#collapseSeven">
+                            <div class="row">
+                                <div class="col-lg-5 text-dark btitle h5">7. Is there a possibility of the truck being a no-show once the booking has been confirmed?</div>
+                                <div class="col-lg-7 text-dark">
+                                    <div class="float-right">
+                                        <div class="btn   btn-circle mr-4"><i class="fa fa-plus fa-fw"></i> </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div id="collapseSeven" class="collapse" data-parent="#accordion">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-lg-12 text-dark text-justify">We are committed to fulfil our responsibility toward all confirmed bookings. In the event of not being able to do so due to unforeseen circumstances, you will be notified well ahead of the pick-up time.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        <a class="card-link" data-toggle="collapse" href="#collapseEight">
+                            <div class="row">
+                                <div class="col-lg-5 text-dark btitle h5">8. Can I change the vehicle type after it has reached the pick-up point?</div>
+                                <div class="col-lg-7 text-dark">
+                                    <div class="float-right">
+                                        <div class="btn   btn-circle mr-4"><i class="fa fa-plus fa-fw"></i> </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div id="collapseEight" class="collapse" data-parent="#accordion">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-lg-12 text-dark text-justify">You can change the vehicle type after it has reached its pick-up destination at an extra cost. You will be charged a cancellation fee as per the company terms and conditions.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        <a class="card-link" data-toggle="collapse" href="#collapseNine">
+                            <div class="row">
+                                <div class="col-lg-5 text-dark btitle h5">9. Do you also provide loading/unloading & packing services?</div>
+                                <div class="col-lg-7 text-dark">
+                                    <div class="float-right">
+                                        <div class="btn   btn-circle mr-4"><i class="fa fa-plus fa-fw"></i> </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div id="collapseNine" class="collapse" data-parent="#accordion">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-lg-12 text-dark text-justify">All services confirmed through us include only transportation of goods. If any manpower & packing assistance is needed, we will give assistance in arranging as per requirement at extra cost. We do not guarantee packing and labour services.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        <a class="card-link" data-toggle="collapse" href="#collapseTen">
+                            <div class="row">
+                                <div class="col-lg-5 text-dark btitle h5">10. How many days or hours in advance do I need to make my booking?</div>
+                                <div class="col-lg-7 text-dark">
+                                    <div class="float-right">
+                                        <div class="btn   btn-circle mr-4"><i class="fa fa-plus fa-fw"></i> </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div id="collapseTen" class="collapse" data-parent="#accordion">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-lg-12 text-dark text-justify">Currently we are accepting bookings at the least an hour prior to your desired pick-up time.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        <a class="card-link" data-toggle="collapse" href="#collapseEleven">
+                            <div class="row">
+                                <div class="col-lg-5 text-dark btitle h5">11. What are the Payment terms?</div>
+                                <div class="col-lg-7 text-dark">
+                                    <div class="float-right">
+                                        <div class="btn   btn-circle mr-4"><i class="fa fa-plus fa-fw"></i> </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div id="collapseEleven" class="collapse" data-parent="#accordion">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-lg-12 text-dark text-justify">In case of Advance booking customers have to pay a token amount via NEFT / IMPS / PAYTM for booking confirmation.
+
+                                Once the truck arrives pickup location customers has to pay 80% or 90 %  at the time of loading and  balance amount at the time of arrival before unloading.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        <a class="card-link" data-toggle="collapse" href="#collapseTwelve">
+                            <div class="row">
+                                <div class="col-lg-5 text-dark btitle h5">12. Who will Generate an e-Way Bill ?</div>
+                                <div class="col-lg-7 text-dark">
+                                    <div class="float-right">
+                                        <div class="btn   btn-circle mr-4"><i class="fa fa-plus fa-fw"></i> </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div id="collapseTwelve" class="collapse" data-parent="#accordion">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-lg-12 text-dark text-justify">Consignor or Consignee before movement of goods needs to Generate Part A & Part B e-way bill. Eway Bill is not required for household items </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        <a class="card-link" data-toggle="collapse" href="#collapseThirteen">
+                            <div class="row">
+                                <div class="col-lg-5 text-dark btitle h5">13. Estimate fare shown in the website is it the Final Fare ?</div>
+                                <div class="col-lg-7 text-dark">
+                                    <div class="float-right">
+                                        <div class="btn   btn-circle mr-4"><i class="fa fa-plus fa-fw"></i> </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div id="collapseThirteen" class="collapse" data-parent="#accordion">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-lg-12 text-dark text-justify">No the Website / App gives Estimate cost & the final fare will be shared by our executive after verification of your pickup and drop location, weight, material details etc.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        <a class="card-link" data-toggle="collapse" href="#collapseFourteen">
+                            <div class="row">
+                                <div class="col-lg-5 text-dark btitle h5">14. What are the additional charges or waiting charges ?</div>
+                                <div class="col-lg-7 text-dark">
+                                    <div class="float-right">
+                                        <div class="btn   btn-circle mr-4"><i class="fa fa-plus fa-fw"></i> </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div id="collapseFourteen" class="collapse" data-parent="#accordion">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-lg-12 text-dark text-justify">If the truck has reached client location and there is delay in loading per day waiting charges range from 1000 to 5000 depending on vehicle type , if the vehicle is not loaded and returned empty customer is liable to pay fuel charges and waiting charges.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        <a class="card-link" data-toggle="collapse" href="#collapseFifteen">
+                            <div class="row">
+                                <div class="col-lg-5 text-dark btitle h5">15. Who will contact me for my booking or after placing a call back request ?</div>
+                                <div class="col-lg-7 text-dark">
+                                    <div class="float-right">
+                                        <div class="btn   btn-circle mr-4"><i class="fa fa-plus fa-fw"></i> </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div id="collapseFifteen" class="collapse" data-parent="#accordion">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-lg-12 text-dark text-justify">SSPT does not shares client data to any other agencies, one of our executive will call you back to verify your information. After confirmation of details, customer has to deposit booking amount only to SSPT account for final vehicle placement. For any queries related to booking kindly email us at corporate@ssptlogistics.com or call 1800 2122 55555</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        <a class="card-link" data-toggle="collapse" href="#collapseSixteen">
+                            <div class="row">
+                                <div class="col-lg-5 text-dark btitle h5">16. Do you provide Parcel, bike, courier or car transport service?</div>
+                                <div class="col-lg-7 text-dark">
+                                    <div class="float-right">
+                                        <div class="btn   btn-circle mr-4"><i class="fa fa-plus fa-fw"></i> </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div id="collapseSixteen" class="collapse" data-parent="#accordion">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-lg-12 text-dark text-justify">SSPT provides all kind of service to our customers</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        <a class="card-link" data-toggle="collapse" href="#collapseSeventeen">
+                            <div class="row">
+                                <div class="col-lg-5 text-dark btitle h5">17. What are the GST charges on Fare amount ?</div>
+                                <div class="col-lg-7 text-dark">
+                                    <div class="float-right">
+                                        <div class="btn   btn-circle mr-4"><i class="fa fa-plus fa-fw"></i> </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div id="collapseSeventeen" class="collapse" data-parent="#accordion">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-lg-12 text-dark text-justify">GST is Payable on Reverse Charge Mechanism: GST @ 5%</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <footer>
+        <!-- Footer main -->
+        <section class="ft-main">
+            <div class="ft-main-item col-lg-4">
+                <img src="img/sspt-logo-new.png" width="120px">
+                <h4 class="btitle mt-3">SRI SENDRAYA PERUMAL TRANSPORTS</h4>
+                <p class=" text-justify">SSPT Logistics Private Limited is operating more than 150 branches across the country. All our trucks are fitted with Electronic Tracking Devices, to locate the consignments and the trucks, at your fingertips to a Smart Phones.</p>
+            </div>
+            <div class="col-lg-5"></div>
+            <div class="ft-main-item col-lg-3">
+                <h3 class="ft-title">Our Social Media</h3>
+                <!-- <p>Get free updates before others do!</p>
+                <form class="footerss mb-4">
+                    <input type="email" name="email" placeholder="Enter email address">
+                    <input type="submit" value="Subscribe">
+                </form> -->
+                <section class="">
+                    <ul class="ft-social-list">
+                        <li><a href="#"><i class="fa fa-whatsapp"></i></a></li>
+                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                        <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+                        <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                    </ul>
+                </section>
+                <section class="">
+                 <div class="ft-social-list">
+                    <img src="img/playstore.png" width="120px">
+                    <img src="img/appstoree.png" width="120px">
+                </div>
+            </section>
+            </div>
+        </section>
+        <section class="ft-legal bt-1">
+            <ul class="ft-legal-list" style="list-style-type: none; margin-left: -40px;">
+                <li><a href="terms.html">Terms &amp; Conditions</a></li>
+                <li><a href="privacy.html">Privacy Policy</a></li>
+                <li><a href="faq.html">FAQs</a></li>
+                <li>&copy; 2022 by EETTI TECH, Chennai</li>
+            </ul>
+        </section>
+    </footer>
+    <div class="overlay" id="overlay"></div>
+    <div class="popup login" id="login">
+        <div class="scroll">
+            <div class="scroll_wrap">
+                <div class="popup-head">
+                    <div class="title">Sign In</div>
+                    <a class="link js-popup-open" data-href="#registration">Sign Up</a>
+
+                </div>
+                <div class="popup-body">
+                    <div class="subtitle">
+                        Use the e-mail and password that you specified when registering on the site
+                    </div>
+                    <div class="form">
+                        <input type="text" class="input" placeholder="Login">
+                        <input type="text" class="input" placeholder="Password">
+                        <button class="submit button">Sign In</button>
+                        <a href="#" class="link">Forgot password?</a>
+                    </div>
+                </div>
+                <div class="popup-foot">
+                    <p>Login via social networks</p>
+                    <div class="social-links">
+                        <a href="#" class="link facebook"><span></span></a>
+                        <a href="#" class="link twitter"><span></span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="close"></div>
+    </div>
+
+    <div class="popup registration" id="registration">
+        <div class="scroll">
+            <div class="scroll_wrap">
+                <div class="popup-head">
+                    <div class="title">Sign Up</div>
+                    <a class="link js-popup-open" data-href="#login">Sign In</a>
+
+                </div>
+                <div class="popup-body">
+                    <div class="subtitle">
+                        Fill in the registration form and save your favorite tours, synchronize them on all devices
+                    </div>
+                    <div class="form">
+                        <input type="text" class="input" placeholder="Username">
+                        <input type="text" class="input" placeholder="Name">
+                        <input type="text" class="input" placeholder="Surename">
+                        <input type="email" class="input" placeholder="Email">
+                        <input type="password" class="input" placeholder="Password">
+                        <input type="password" class="input" placeholder="Password Repeat">
+                        <button class="submit button js-submit">Registration</button>
+                    </div>
+                </div>
+                <div class="popup-foot">
+                    <p>Sign Up via social networks</p>
+                    <div class="social-links">
+                        <a href="#" class="link facebook"><span></span></a>
+                        <a href="#" class="link twitter"><span></span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="close"></div>
+    </div>
+
+    <div class="popup forgot-pass" id="recovery-pass">
+        <div class="scroll">
+            <div class="scroll_wrap">
+                <div class="popup-head">
+                    <div class="title">Forgot password?</div>
+                </div>
+                <div class="popup-body">
+                    <div class="subtitle">
+                        Use the e-mail and password that you specified when registering on the site
+                    </div>
+                    <div class="form">
+                        <input type="email" class="input" placeholder="Email">
+                        <button class="submit button js-submit">Reset password</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="close"></div>
+    </div>
+
+    <div class="popup profile-setting" id="profile-setting">
+        <div class="scroll">
+            <div class="scroll_wrap">
+                <div class="select-userpic">
+                    <div class="userpic">V</div>
+                    <div class="select">
+                        <input type="file" id="profile-pic">
+                        <label for="profile-pic">Select photo</label>
+                    </div>
+                </div>
+                <div class="popup-head">
+                    <div class="title">Setting</div>
+                </div>
+                <div class="popup-body">
+                    <div class="form">
+                        <input type="text" class="input" placeholder="Username" value="Victor777">
+                        <input type="text" class="input" placeholder="Name" value="Victor">
+                        <input type="text" class="input" placeholder="Surename" value="Shibut">
+                        <input type="email" class="input" placeholder="Email" value="test@test.com">
+                        <div class="label">Change password</div>
+                        <input type="password" class="input" placeholder="Current password">
+                        <input type="password" class="input" placeholder="Enter new password">
+                        <input type="password" class="input" placeholder="New password repeat">
+                        <div class="label">Authorization through social networks</div>
+                        <div class="social-links">
+                            <a href="#" class="link facebook active"><span></span></a>
+                            <a href="#" class="link twitter"><span></span></a>
+                        </div>
+                        <button class="submit button js-submit">Save Setting</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="close"></div>
+    </div>
+
+    <div class="popup contact-us" id="contact-us">
+        <div class="scroll">
+            <div class="scroll_wrap">
+                <div class="popup-head">
+                    <div class="title">Contact Us</div>
+                </div>
+                <div class="popup-body">
+                    <div class="subtitle">
+                        But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain
+                    </div>
+                    <div class="form">
+                        <input type="text" class="input" placeholder="Name">
+                        <input type="email" class="input" placeholder="Email">
+                        <input type="text" class="input" placeholder="Phone">
+                        <textarea class="textarea" placeholder="Your Massage"></textarea>
+                        <button class="submit button js-submit">Send Massage</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="close"></div>
+    </div>
+
+    <div class="popup book-now-popup" id="book-now">
+        <div class="scroll">
+            <div class="scroll_wrap">
+                <div class="popup-head">
+                    <div class="title">Book Now</div>
+                </div>
+                <div class="popup-body">
+                    <div class="tour-title">
+                        <div class="img">
+                            <img src="img/demo-bg.jpg" alt="">
+                        </div>
+                        <div class="tour-name">
+                            Tour to the Arctic is an exotic journey on the verge of extreme
+                        </div>
+                    </div>
+                    <div class="tour-info">
+                        <div class="col">
+                            <div class="label">Check In</div>
+                            <div class="date">
+                                <div class="day">09</div>
+                                <div class="month">May</div>
+                                <div class="year">2019</div>
+                            </div>
+                            <div class="label">Aduld: <span>3</span></div>
+                        </div>
+                        <div class="col">
+                            <div class="label">Check Out</div>
+                            <div class="date">
+                                <div class="day">09</div>
+                                <div class="month">May</div>
+                                <div class="year">2019</div>
+                            </div>
+                            <div class="label">Children: <span>0</span></div>
+                        </div>
+                    </div>
+                    <div class="form">
+                        <input type="text" class="input" placeholder="Your First Name">
+                        <input type="text" class="input" placeholder="Your Last Name">
+                        <input type="email" class="input" placeholder="Your Email">
+                        <input type="tel" class="input" placeholder="Your Number Phone">
+                        <textarea class="textarea" placeholder="Where are your address?"></textarea>
+                        <textarea class="textarea" placeholder="Note:"></textarea>
+                        <button class="submit button js-submit">Book Now | <b>$356</b></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="close"></div>
+    </div>
+
+    <div class="popup success-popup" id="contact-us-success">
+        <div class="scroll">
+            <div class="scroll_wrap">
+                <div class="popup-head">
+                    <div class="title">Success</div>
+                </div>
+                <div class="popup-body">
+                    <div class="subtitle">
+                        Your message was successfully sent. We will contact you shortly
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="close"></div>
+    </div>
+</body>
+<script>
+    AOS.init();
+</script>
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery-ui.min.js"></script>
+<script src="js/lightgallery.js"></script>
+<script src="js/jquery.mousewheel.min.js"></script>
+<script src="js/slick.min.js"></script>
+<script src="js/hammer.js"></script>
+<script src="js/scripts.js"></script>
+
+</html>
