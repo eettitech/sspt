@@ -408,7 +408,7 @@ body.pop-up-open {
 .user .userlink:before {
   width: 20px;
   height: 18px;
-  background: url(../img/user.svg) center center no-repeat;
+  background: url(../img/user.png) center center no-repeat;
   background-size: contain;
   position: absolute;
   top: 50%;
@@ -422,7 +422,7 @@ body.pop-up-open {
 .user .userlink:after {
   width: 20px;
   height: 18px;
-  background: url(../img/user-hover.svg) center center no-repeat;
+  background: url(../img/user-hover.png) center center no-repeat;
   background-size: contain;
   position: absolute;
   top: 50%;
